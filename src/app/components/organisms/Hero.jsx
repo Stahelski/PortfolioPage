@@ -6,7 +6,6 @@ import RoundBtnMail from "../atoms/RoundBtnMail";
 export default function Hero() {
   return (
     <>
-      <RoundBtnMail />
       <RoundBtnArtstadion />
       <RoundBtnGithub />
       <HeroBG />
