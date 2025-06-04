@@ -1,19 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --SideBarBackground: #85859c;
-  --SidebarBorderLeft: #403c4e;
+  --NavbarColor: #fffa65;
+
+  --SideBarBackground: #fffa65;
   --SideButton: #000000;
   --SideButtonHover: #2e2e2e;
-  --SideButtonBorder: #fffdf4;
+  --SideButtonBorder: linear-gradient(to right, #888888, #c98ca7);
 
-  --LearnMoreBtn: #595278;
+  --ProjectSectionBackground: #fffdf4;
+  --ProjectSectionGraybox: #d9d9d9b8;
 }
-
-/* #e5e5e570, #17103486 */
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #413000;
+  height: 1000px;
+  width: auto;
 }
 h1 {
   font-family: "Play", sans-serif;
@@ -21,7 +24,22 @@ h1 {
   height: auto;
 }
 
+/* //! */
+/* Navbar */
+.Navbar {
+  background-color: var(--NavbarColor);
+}
 
+/* //! */
+/* //! */
+/* 
+SideBar
+RoundBtn - Artstation, Github, Mail
+*/
+.Sidebar {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  background-color: var(--SideBarBackground);
+}
 
 .RoundBtnGradient {
   background: var(--SideButtonBorder);
@@ -34,43 +52,53 @@ h1 {
   background: var(--SideButtonHover);
 }
 
-.RoundBtnImg{
+.RoundBtnImg {
   transition: all 0.2s ease;
 }
 .RoundBtnImg:hover {
   filter: brightness(1.1);
 }
-.underlineHover{
-  opacity: 0;
-  transition: opacity 0.2 ease;
-  transform: translate(-50%);
-  filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
-  color: white;
-  border-radius: 0 21px 21px 21px;
+/* //! */
+/* //! */
+/* Hero Main Card, Project Card */
+.HeroMainContainer {
+  box-shadow: 0px 0px 10px 0px #000000;
 }
-.underlineHover:hover{
- transition: all 0.2s ease;
- opacity: 1;
+.HeroMain {
+  border-radius: 27px;
+  box-shadow: 0px 0px 60px 0px #000000;
 }
 
+/* Scroll animasjon - Hero */
 
-.ImageContainer {
-  background: var(--SideBarBackground);
-  border-left: 6px solid var(--SidebarBorderLeft);
+/* //! */
+/* //! */
+/* Project Section */
+
+.ProjectSectionContainer {
+  background-color: var(--ProjectSectionBackground);
 }
 
-.underlineHover {
-  background: var(--SideButtonHover);
+.ProjectImageContainer {
+  background-color: var(--ProjectSectionBackground);
+  box-shadow: 3px 3px 21px 0px #616161;
+  border-radius: 27px;
+}
+.ProjectImageGraybox {
+  border-radius: 21px;
+  background-color: var(--ProjectSectionGraybox);
+}
+.GymAppImg1,
+.GymAppImg2,
+.GymAppImg3 {
+}
+.inview {
+  animation: imgAnimasjon 0.5s ease-out forwards;
+}
+@keyframes imgAnimasjon {
 }
 
-.ProjectCardBorder {
-  background: var(--SideButtonBorder);
+.ProjectText {
+  background-color: transparent;
 }
-
-
-
-.HeroContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* //! */

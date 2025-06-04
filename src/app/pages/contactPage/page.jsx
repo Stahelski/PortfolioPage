@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Navbar from "@/app/components/organisms/Navbar";
+import Navbar from "@/app/components/molecules/Navbar";
 import Footer from "@/app/components/organisms/Footer";
 
 export default function contactPage() {
