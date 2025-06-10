@@ -14,16 +14,16 @@ export default function ProjectSection() {
         >
           <div className="ProjectImageGraybox md:h-[40vh] lg:h-[51vh] w-[55dvw] p-5">
             <img
-              src="/GymAppImg1.png"
-              className="GymAppImg1 w-[21dvw] rounded-lg z-[5] relative md:top-[20vh]  lg:top-[21vh]     right-[0dvw]"
+              src="/GymAppPage1.png"
+              className="GymAppImg1 w-[21dvw] rounded-sm z-[5] relative md:top-[20vh]  lg:top-[21vh]     right-[0dvw]"
             />
             <img
-              src="/GymAppImg2.png"
-              className="GymAppImg2 w-[21dvw] rounded-lg z-[4] relative md:bottom-[9vh] lg:bottom-[22vh]  left-[15dvw]"
+              src="/GymAppPage2.png"
+              className="GymAppImg2 w-[21dvw] rounded-sm z-[4] relative md:bottom-[9vh] lg:bottom-[22vh]  left-[15dvw]"
             />
             <img
-              src="/GymAppImg3.png"
-              className="GymAppImg3 w-[21dvw] rounded-lg z-[3] relative md:bottom-[42vh] lg:bottom-[66vh]  left-[30.5dvw]"
+              src="/GymAppPage3.png"
+              className="GymAppImg3 w-[21dvw] rounded-sm z-[3] relative md:bottom-[42vh] lg:bottom-[66vh]  left-[30.5dvw]"
             />
           </div>
         </Link>

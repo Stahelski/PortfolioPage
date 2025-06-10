@@ -9,11 +9,10 @@ export default function Hero() {
   return (
     <>
       <div className="HeroMainContainer z-[2] h-[100dvh] flex justify-center items-center">
-        <div className="HeroMain z-[1] h-[85dvh] w-[90dvw] bg-amber-50/70">
-          <div className="TestAnimasjon"></div>
+        <div className="HeroMain relative h-auto w-[75%]  z-[1] bg-white/30 backdrop-blur-xs">
           <Navbar />
           <Sidebar />
-          <div className="h-auto w-[25dvw] font-bold ml-55 mt-8">
+          <div className="h-auto w-5% font-bold ml-70 mt-12">
             A strategic creative studio focused on building powerful web pages
             that Drives Impact.
           </div>

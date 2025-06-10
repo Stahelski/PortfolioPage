@@ -7,7 +7,7 @@
   --SideBarBackground: #fffa65;
   --SideButton: #000000;
   --SideButtonHover: #2e2e2e;
-  --SideButtonBorder: linear-gradient(to right, #888888, #c98ca7);
+  --SideButtonBorder: linear-gradient(to right, #888888, #bdc98c);
 
   --ProjectSectionBackground: #fffdf4;
   --ProjectSectionGraybox: #d9d9d9b8;
@@ -35,8 +35,11 @@ h1 {
 
 /* ////////////////////////////////! */
 /* Navbar */
-.Navbar {
+.Navbar,
+.AboutNavbar,
+.ContactPageNavbar {
   background-color: var(--NavbarColor);
+  font-family: Play;
 }
 
 /* //! */
@@ -197,4 +200,19 @@ textarea.InputContactPage {
 .ProjectPageGymmApp {
   background-color: var(--ProjectSectionGraybox);
   color: #546e70;
+}
+
+.projectPageContainer1 {
+  background-color: var(--FooterColor);
+}
+.projectPageContainer2 {
+  background-color: var(--SideButtonHover);
+  box-shadow: 1px 1px 10px 5px #2d2d2d;
+  color: rgb(226, 226, 226);
+}
+.projectPageContainer3 {
+}
+.projectPageContainer4 {
+  background-color: #bdbdbd;
+  box-shadow: 1px 1px 10px 5px #6b6b6b;
 }
