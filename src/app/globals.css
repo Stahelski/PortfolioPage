@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  --TextColor: #271000;
   --NavbarColor: #fffa65;
 
   --SideBarBackground: #fffa65;
@@ -10,12 +11,16 @@
 
   --ProjectSectionBackground: #fffdf4;
   --ProjectSectionGraybox: #d9d9d9b8;
+
+  --FooterColor: #d9d9d9b8;
+
+  --BackGroundColor: #e2dfd2;
+  --SecondBackgroundColor: #dad5c5;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: #413000;
-  height: 1000px;
   width: auto;
 }
 h1 {
@@ -24,13 +29,16 @@ h1 {
   height: auto;
 }
 
-/* //! */
+.BG {
+  box-shadow: 0px 0px 6px 0px #616161;
+}
+
+/* ////////////////////////////////! */
 /* Navbar */
 .Navbar {
   background-color: var(--NavbarColor);
 }
 
-/* //! */
 /* //! */
 /* 
 SideBar
@@ -59,7 +67,6 @@ RoundBtn - Artstation, Github, Mail
   filter: brightness(1.1);
 }
 /* //! */
-/* //! */
 /* Hero Main Card, Project Card */
 .HeroMainContainer {
   box-shadow: 0px 0px 10px 0px #000000;
@@ -69,14 +76,11 @@ RoundBtn - Artstation, Github, Mail
   box-shadow: 0px 0px 60px 0px #000000;
 }
 
-/* Scroll animasjon - Hero */
-
-/* //! */
 /* //! */
 /* Project Section */
-
 .ProjectSectionContainer {
   background-color: var(--ProjectSectionBackground);
+  box-shadow: 0px 0px 5px 0px #616161;
 }
 
 .ProjectImageContainer {
@@ -92,13 +96,105 @@ RoundBtn - Artstation, Github, Mail
 .GymAppImg2,
 .GymAppImg3 {
 }
-.inview {
-  animation: imgAnimasjon 0.5s ease-out forwards;
-}
-@keyframes imgAnimasjon {
-}
-
 .ProjectText {
   background-color: transparent;
 }
 /* //! */
+/* Footer Section */
+.FooterContainer {
+  background-color: var(--FooterColor);
+  box-shadow: 0px 0px 2px 0px #616161;
+  color: #546e70;
+}
+/* ////////////////////////////////! */
+/* ////////////////////////////////! */
+/* New Page */
+/* About Page */
+.AboutPageContainer {
+  /* background-color: var(--BackGroundColor); */
+  background-color: #d9d9d9;
+}
+/* //! */
+/* Navbar About page */
+.AboutNavbar {
+  /* background-color: var(--NavbarColor);
+  color: var(--TextColor); */
+  background-color: #e7e7e7;
+  color: #546e70;
+}
+/* //! */
+/* Top container */
+.AboutTopContainer {
+  /* background-color: var(--BackGroundColor);
+  color: var(--TextColor); */
+  background-color: #d9d9d9;
+  color: #546e70;
+}
+.AboutTextLine {
+  background-color: #9ca7aa;
+}
+/* //! */
+/* Mid container */
+.AboutMidContainer {
+  /* background-color: var(--BackGroundColor);
+  color: var(--TextColor); */
+  background-color: #d9d9d9;
+  color: #546e70;
+}
+.ImgContainer1,
+.ImgContainer2,
+.ImgContainer3,
+.ImgContainer4 {
+  box-shadow: 3px 3px 5px 0px #616161;
+  border-radius: 27px;
+}
+/* //! */
+/* Lower container */
+.AboutBottomContainer {
+  /* background-color: var(--SecondBackgroundColor);
+  color: var(--TextColor); */
+  background-color: #e2e2e0;
+  color: #546e70;
+  box-shadow: 0px 0px 5px 0px #616161;
+}
+.RandomImage {
+  box-shadow: 3px 3px 5px 0px #616161;
+}
+/* ////////////////////////////////! */
+/* ////////////////////////////////! */
+/* Contact Page */
+.ContactPageContainer {
+  background-color: #d9d9d9;
+  color: #546e70;
+}
+.ContactTopContainer {
+  box-shadow: 0 5px 5px #6161612d;
+}
+.ContactPageNavbar {
+  background-color: #e7e7e7;
+}
+.ContactPageContainer {
+  background-color: var(--FooterColor);
+}
+
+.InputContactPage {
+  background-color: var(--ProjectSectionBackground);
+  border: solid 1px gray;
+  border-radius: 12px;
+  box-shadow: 1px 1px 2px 0px #616161;
+
+  outline: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 8px;
+}
+textarea.InputContactPage {
+  text-align: left;
+  padding-top: 8px;
+}
+/* ////////////////////////////////! */
+/* ////////////////////////////////! */
+/* Gym App Project Page */
+.ProjectPageGymmApp {
+  background-color: var(--ProjectSectionGraybox);
+  color: #546e70;
+}

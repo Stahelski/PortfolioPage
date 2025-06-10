@@ -1,9 +1,16 @@
-'use client'
+
+"use client";
 import React from "react";
-import FrontPage from "./pages/frontPage/page.jsx" 
+import Hero from "./components/organisms/Hero";
+import ProjectSection from "./components/organisms/projectSection";
+import Footer from "./components/organisms/Footer";
 
 export default function Home() {
-  return <div className="overflow-x-scroll overflow-y-hidden">
-    <FrontPage />
-  </div>;
+  return (
+    <div className="overflow-x-scroll overflow-y-hidden">
+      <Hero />
+      <ProjectSection />
+      <Footer />
+    </div>
+  );
 }
