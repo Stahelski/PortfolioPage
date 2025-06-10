@@ -7,7 +7,7 @@ import React from "react";
 
 export default function aboutPage() {
   return (
-    <div className="AboutPageContainer h-[200dvh] w-screen">
+    <div className="AboutPageContainer h-[200dvh]">
       {/* mx-auto for å sentrere */}
       <div className="AboutNavbar mx-auto mt-7 mb-5 h-[10dvh] w-[95dvw] rounded-[27px] flex justify-around items-center">
         <Link href="/" className="cursor-pointer text-[6dvh]">

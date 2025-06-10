@@ -1,12 +1,16 @@
-"use client"
-import React from "react"
+"use client";
+import React from "react";
 
-export default function HeroBG(){
-    return(
-        <>
-        <div className="BG z-[0] bg-transparent absolute right-0">
-            <img src="/BGMe-pica1.png" alt="Background" className="h-screen w-auto"/>
-        </div>
-        </>
-    )
+export default function HeroBG() {
+  return (
+    <>
+      <div className="BG z-[0] bg-transparent absolute right-0 w-full h-full overflow-hidden">
+        <img
+          src="/BGMe-pica1.png"
+          alt="Background"
+          className="h-full w-full object-cover sm:object-contain sm:w-screen sm:h-auto"
+        />
+      </div>
+    </>
+  );
 }
