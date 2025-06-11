@@ -1,40 +1,92 @@
 "use client";
 
-import React from "react";
-import css from "../../globals.css";
+import Image from "next/image";
 import Link from "next/link";
+// Bruker next/image for bedre ytelse, automatisk lazy loading og tilpasset responsivitet
 
 export default function ProjectSection() {
   return (
-    <>
-      <div className="ProjectSectionContainer h-[80dvh] flex justify-center items-center">
-        <Link
-          href="/projectPage"
-          className="ProjectImageContainer md:h-[46vh] lg:h-[60vh] w-[60dvw] flex justify-center items-center"
-        >
-          <div className="ProjectImageGraybox md:h-[40vh] lg:h-[51vh] w-[55dvw] p-5">
-            <img
-              src="/GymAppPage1.png"
-              className="GymAppImg1 w-[21dvw] rounded-sm z-[5] relative md:top-[20vh]  lg:top-[21vh]     right-[0dvw]"
-            />
-            <img
-              src="/GymAppPage2.png"
-              className="GymAppImg2 w-[21dvw] rounded-sm z-[4] relative md:bottom-[9vh] lg:bottom-[22vh]  left-[15dvw]"
-            />
-            <img
-              src="/GymAppPage3.png"
-              className="GymAppImg3 w-[21dvw] rounded-sm z-[3] relative md:bottom-[42vh] lg:bottom-[66vh]  left-[30.5dvw]"
+    <section className="flex flex-col items-center justify-center gap-8 px-4 py-10 sm:flex-row sm:py-16 lg:h-screen">
+      {/* Project Image Link */}
+      <Link
+        href="/projectPage"
+        className="flex justify-center items-center w-full sm:w-1/2"
+      >
+        <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl rounded-xl overflow-hidden shadow-lg backdrop-blur-md bg-white/10 p-4">
+          {/* Desktop Image */}
+          <div className="hidden sm:block">
+            <Image
+              src="/GymAppPage123.png"
+              alt="Gym App Desktop Preview"
+              width={600}
+              height={400}
+              className="mx-auto"
+              priority
             />
           </div>
-        </Link>
-        <div className="ProjectText w-[30dvw] h-[65dvh] pl-[2dvw] pr-[10dvw] pt-[5dvh] flex justify-center items-center">
-          This was my first ever mobile/web app design. Taken inspiration from
-          one of my favorite exercise apps. It combines a professional design,
-          simple and straight to the point. with cutting edge AI system to help
-          you stay on track and push your limits in a scientific way! It wil
-          help you plan your messo and strive fore new goals!
+
+          {/* Mobile Image */}
+          <div className="block sm:hidden">
+            <Image
+              src="/GymAppPage123MobilLeft.png"
+              alt="Gym App Mobile Preview"
+              width={350}
+              height={600}
+              className="mx-auto"
+              priority
+            />
+          </div>
         </div>
+      </Link>
+
+      {/* Project Description */}
+      <div className="w-full max-w-xl text-center sm:text-left sm:w-1/2 px-2 sm:px-4">
+        <p className="text-sm sm:text-base lg:text-lg text-white leading-relaxed">
+          This was my first ever mobile/web app design. I took inspiration from
+          one of my favorite exercise apps. It combines professional design with
+          a simple, straight-to-the-point interface, and a cutting-edge AI
+          system to help you stay on track and push your limits in a scientific
+          way. It will help you plan your meso cycles and strive toward new
+          goals!
+        </p>
       </div>
-    </>
+    </section>
   );
 }
+
+// "use client";
+
+// import React from "react";
+// import css from "../../globals.css";
+// import Link from "next/link";
+
+// export default function ProjectSection() {
+//   return (
+//     <>
+//       <div className="ProjectSectionContainer h-[80dvh] pl-2 sm:h-[85dvh] xl:h-[100dvh] flex flex-col sm:flex-row justify-center items-center gap-6">
+//         <Link
+//           href="/projectPage"
+//           className="ProjectImageContainer w-[70dvw] h-[47dvh] sm:w-149 sm:h-100 sm:ml-5 xl:w-70 xl:h-110 flex justify-center items-center"
+//         >
+//           <div className="ProjectImageGraybox w-[86dvw] h-[44dvh] sm:w-140 sm:h-92 xl:w-260 xl:h-100 m-3">
+//             <img
+//               src="/GymAppPage123.png"
+//               className="relative w-130 mt-4 mx-auto xl:w-60 bottom-2 hidden sm:block"
+//             ></img>
+//             <img
+//               src="/GymAppPage123MobilLeft.png"
+//               className="relative w-[72dvw] mx-auto block sm:hidden"
+//             ></img>
+//           </div>
+//         </Link>
+//         <div className="ProjectText w-75 mt-10 text-xs sm:w-120 sm:text-sm sm:mr-5 xl:text-lg xl:w-220 flex justify-center items-center">
+//           This was my first ever mobile/web app design. Taken inspiration from
+//           one of my favorite exercise apps. It combines a professional design,
+//           simple and straight to the point. with cutting edge AI system to help
+//           you stay on track and push your limits in a scientific way! It wil
+//           help you plan your messo and strive fore new goals!
+//         </div>
+//       </div>
+//     </>
+//   );
+// }

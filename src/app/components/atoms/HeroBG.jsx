@@ -8,7 +8,7 @@ export default function HeroBG() {
         <img
           src="/BGMe-pica1.png"
           alt="Background"
-          className="h-full w-full object-cover sm:object-contain sm:w-screen sm:h-auto"
+          className="h-full w-full object-cover sm:object-overflow sm:w-screen sm:h-screen"
         />
       </div>
     </>
