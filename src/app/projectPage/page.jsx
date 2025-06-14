@@ -54,27 +54,27 @@ export default function projectPage() {
         </div>
       </div>
 
-      <div className="projectPageContainer2 flex mt-10 justify-between items-center w-screen">
-        <div className="ContainerGymApp2Images mt-10 mb-10 relative pt-10 w-[65dvw] h-[90dvh]">
+      <div className="projectPageContainer2 flex flex-col lg:flex-row items-center justify-between gap-10 mt10 w-screen px-6">
+        <div className="ContainerGymApp2Images relative w-screen lg:w-2/3 h-[60dvh] sm:h-[70vh] md:h-[85vh]">
           <img
             src="/GymAppPage1.png"
             alt="gymImage1"
-            className="absolute top-10 right-10 z-5 translate-x-4 translate-y-2 h-[45dvh] w-auto rounded-sm shadow-xl shadow-gray-900"
+            className="absolute top-10 right-4 sm:right-20 w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-10"
           ></img>
           <img
             src="/GymAppPage2.png"
             alt="gymImage2"
-            className="absolute top-55 right-80 z-10 h-[45dvh] w-auto translate-x-4 rounded-sm shadow-xl shadow-gray-900"
+            className="absolute top-[27%] right-[25%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-20"
           ></img>
           <img
             src="/GymAppPage3.png"
             alt="gymImage3"
-            className="absolute top-100 right-150 z-15 h-[45dvh] w-auto rounded-sm shadow-xl shadow-gray-900"
+            className="absolute top-[47%] right-[45%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-30"
           ></img>
         </div>
-        <div className="ContainerGymApp2Text mr-35 w-[25dvw]">
+        <div className="ContainerGymApp2Text w-full lg:w-1/3 text-center lg:text-left">
           <h2 className="font-bold text-3xl">Consistent</h2>
-          <p className="text-md mt-2">
+          <p className="text-md mt-2 mr-15 leading-relaxed">
             I created a much-needed exersise app that that allows you to chouse
             from a colection of training plans designed to your own goal. And
             with AI and modern exersise siense, all you need to do is fill in
