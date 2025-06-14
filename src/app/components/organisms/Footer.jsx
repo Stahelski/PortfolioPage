@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <div className="FooterContainer h-[12dvh] flex justify-around items-center">
         <div className="2025 mr-80">© 2025</div>
-        <div className="CAContainer ml-80 flex justify-around items-center">
+        <div className="CAContainer flex justify-around items-center ml-80 text-zinc-950">
           <Link href="/contactPage">
             <p>Contact</p>
           </Link>

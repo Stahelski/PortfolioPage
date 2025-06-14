@@ -7,8 +7,8 @@ import Footer from "../components/organisms/Footer";
 
 export default function projectPage() {
   return (
-    <div className="ProjectPageGymmApp w-screen">
-      <div className="AboutNavbar mx-auto mt-7 mb-5 h-[10dvh] w-[95dvw] rounded-[27px] flex justify-around items-center">
+    <div className="ProjectPageGymmApp w-full">
+      <div className="AboutNavbar mx-auto mt-6 mb-4 h-[10vh] w-[95%] rounded-2xl flex flex-col sm:flex-row justify-around items-center px-4">
         <Link href="/" className="cursor-pointer text-[6dvh]">
           FrontendForge
         </Link>
@@ -17,18 +17,18 @@ export default function projectPage() {
         </Link>
       </div>
 
-      <div className="projectPageContainer1 h-[88dvh] w-screen flex justify-around items-center">
-        <div className="ContainerGymApp1Left ml-15">
-          <div className="HeadLineTextGymAppPage h-[12dvh] w-[40dvw] font-bold text-5xl">
+      <div className="projectPageContainer1 flex flex-col lg:flex-row justify-around items-center w-full px-6 py-8 gap-8">
+        <div className="ContainerGymApp1Left max-w-xl">
+          <div className="HeadLineTextGymAppPage mb-4 text-3xl sm:text-4xl md:text-5xl font-bold">
             <p>Creating a clean</p>
             <p>design system</p>
           </div>
-          <div className="AboutTextLine mb-2 h-[1px] w-[35dvw]"></div>
-          <div className="SmalTextGymAppPage pr-50 h-[2dvh] w-[35dvw] text-sm flex justify-between items-start">
+          <div className="AboutTextLine mb-4 h-px bg-gray-500 w-full max-w-md"></div>
+          <div className="SmalTextGymAppPage flex justify-start text.sm mb-4">
             <p className="">Meso</p>
             <p className="ml-65">2025</p>
           </div>
-          <p className="AboutGymAppText1 pt-4 h-[30dvh] w-[45dvw] text-md">
+          <p className="AboutGymAppText1 text-base sm:text-md md:text-lg leading-relaxed max-w-xl">
             I created a much-needed exersise app thatthat allows you to chouse
             from a colection of training plans designed to your own goal.And
             with AI and modern exersise siense, allyou need to do is fill in
@@ -37,19 +37,19 @@ export default function projectPage() {
           </p>
         </div>
 
-        <div className="ContainerGymApp1Right mr-15 flex felx-row gap-4">
-          <div className="ColorPalletGymAppTop pt-5 w-[8dvw] flex flex-col gap-2">
-            <div className="bg-[#FFFFFF] rounded-sm h-20 w-20"></div>
-            <div className="bg-[#404040] rounded-sm h-20 w-20"></div>
-            <div className="bg-[#212121] rounded-sm h-20 w-20"></div>
-            <div className="bg-[#45B622] rounded-sm h-20 w-20"></div>
-            <div className="bg-[#746F35] rounded-sm h-20 w-20"></div>
-            <div className="bg-[#505050] rounded-sm h-20 w-20"></div>
+        <div className="ContainerGymApp1Right flex flex-col md:flex-row gap-6 md:gap-8 items-center justify-center w-1/3">
+          <div className="ColorPalletGymAppTop flex md:flex-col gap-2">
+            <div className="bg-[#FFFFFF] rounded-sm h-16 w-16 sm:h-20 sm:w-20"></div>
+            <div className="bg-[#404040] rounded-sm h-16 w-16 sm:h-20 sm:w-20"></div>
+            <div className="bg-[#212121] rounded-sm h-16 w-16 sm:h-20 sm:w-20"></div>
+            <div className="bg-[#45B622] rounded-sm h-16 w-16 sm:h-20 sm:w-20"></div>
+            <div className="bg-[#746F35] rounded-sm h-16 w-16 sm:h-20 sm:w-20"></div>
+            <div className="bg-[#505050] rounded-sm h-16 w-16 sm:h-20 sm:w-20"></div>
           </div>
 
           <img
             src="/GymAppMobilPage1.png"
-            className="MobileStartPageGymApp h-auto w-[15dvw] rounded-3xl border-4 border-[#45B622] shadow-2xl"
+            className="MobileStartPageGymApp w-32 sm:w-40 md:w-48 lg:w-60 h-auto rounded-3xl border-4 border-[#45B622] shadow-2xl"
           ></img>
         </div>
       </div>

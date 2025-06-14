@@ -12,36 +12,41 @@ export default function ProjectSection() {
         href="/projectPage"
         className="flex justify-center items-center w-full sm:w-1/2"
       >
-        <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl rounded-xl overflow-hidden shadow-lg backdrop-blur-md bg-white/10 p-4">
-          {/* Desktop Image */}
-          <div className="hidden sm:block">
-            <Image
-              src="/GymAppPage123.png"
-              alt="Gym App Desktop Preview"
-              width={600}
-              height={400}
-              className="mx-auto"
-              priority
-            />
-          </div>
+        <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-4xl rounded-xl overflow-hidden shadow-lg backdrop-blur-md bg-white/50 p-4">
+          <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-4xl rounded-xl overflow-hidden shadow-sm backdrop-blur-md bg-zink-50 p-4">
+            {/* Desktop Image */}
+            <div className="hidden sm:block">
+              <Image
+                src="/GymAppPage123.png"
+                alt="Gym App Desktop Preview"
+                width={600}
+                height={400}
+                className="mx-auto"
+                priority
+              />
+            </div>
 
-          {/* Mobile Image */}
-          <div className="block sm:hidden">
-            <Image
-              src="/GymAppPage123MobilLeft.png"
-              alt="Gym App Mobile Preview"
-              width={350}
-              height={600}
-              className="mx-auto"
-              priority
-            />
+            {/* Mobile Image */}
+            <div className="block sm:hidden">
+              <Image
+                src="/GymAppPage123MobilLeft.png"
+                alt="Gym App Mobile Preview"
+                width={350}
+                height={600}
+                className="mx-auto"
+                priority
+              />
+            </div>
           </div>
         </div>
       </Link>
 
       {/* Project Description */}
       <div className="w-full max-w-xl text-center sm:text-left sm:w-1/2 px-2 sm:px-4">
-        <p className="text-sm sm:text-base lg:text-lg text-white leading-relaxed">
+        <h1 className="font-bold text-sm sm:text-base lg:text-lg text-zinc-950 leading-relaxed">
+          Meso
+        </h1>
+        <p className="text-sm sm:text-base lg:text-lg text-zinc-950 leading-relaxed">
           This was my first ever mobile/web app design. I took inspiration from
           one of my favorite exercise apps. It combines professional design with
           a simple, straight-to-the-point interface, and a cutting-edge AI
