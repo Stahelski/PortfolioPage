@@ -7,7 +7,7 @@ import Footer from "../components/organisms/Footer";
 
 export default function projectPage() {
   return (
-    <div className="ProjectPageGymmApp w-full">
+    <div className="ProjectPageGymmApp grid grig-row-1 w-screen">
       <div className="AboutNavbar mx-auto mt-6 mb-4 h-[10vh] w-[95%] rounded-2xl flex flex-col sm:flex-row justify-around items-center px-4">
         <Link href="/" className="cursor-pointer text-[6dvh]">
           FrontendForge
@@ -55,7 +55,7 @@ export default function projectPage() {
       </div>
 
       <div className="projectPageContainer2 flex flex-col lg:flex-row items-center justify-between gap-10 mt10 w-screen px-6">
-        <div className="ContainerGymApp2Images relative w-screen lg:w-2/3 h-[60dvh] sm:h-[70vh] md:h-[85vh]">
+        <div className="ContainerGymApp2Images relative w-screen md:mb-15 md:mt-5 lg:w-2/3 h-[60dvh] sm:h-[70vh] md:h-[85vh]">
           <img
             src="/GymAppPage1.png"
             alt="gymImage1"
@@ -72,7 +72,7 @@ export default function projectPage() {
             className="absolute top-[47%] right-[45%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-30"
           ></img>
         </div>
-        <div className="ContainerGymApp2Text w-full lg:w-1/3 text-center lg:text-left">
+        <div className="ContainerGymApp2Text mb-15 mt-5 w-full lg:w-1/3 text-center lg:text-left">
           <h2 className="font-bold text-3xl">Consistent</h2>
           <p className="text-md mt-2 mr-15 leading-relaxed">
             I created a much-needed exersise app that that allows you to chouse
@@ -84,48 +84,51 @@ export default function projectPage() {
         </div>
       </div>
 
-      <div className="projectPageContainer3 mt-10 flex justify-around items-center">
-        <div className="ContainerGymApp3Left ml-15 pt-35 w-[55dvw] h-[60dvh] flex flex-col">
-          <p className="text-5xl flex justify-center items-center">
-            Color choise
-          </p>
-          <p className="text-md flex justify-center items-center">
-            Some text explaining why i selected thees colors
+      <div className="projectPageContainer3 mt-15 flex flex-col lg:flex-row justify-around items-center w-full min-h-[60vh]">
+        <div className="ContainerGymApp3Left  mx-15 mt-10 sm:mt-0 lg:max-w-md text-center lg:text-left">
+          <p className="text-4xl md:text-5xl font-bold mb-4">Color choise</p>
+          <p className="text-base sm:text-md md:text-lg leading-relaxed ">
+            This app uses a clean and modern color scheme consisting of dark
+            gray, gray, white, and green. The dark gray and gray tones provide a
+            neutral, low-distraction background that enhances readability and
+            reduces eye strain, especially in low-light environments. White is
+            used strategically for clarity and contrast, ensuring that content
+            stands out. Green serves as the primary accent color, guiding user
+            attention to key actions and reinforcing a sense of progress and
+            positivity. This balanced palette supports both usability and a
+            sleek visual identity.
           </p>
         </div>
-        <div className="ContainerGymApp3Right mr-15 w-[45dvw] h-[60dvh] flex justify-center items-center">
-          <div className="GymAppColorchoise3 grid grid-cols-3 gap-3 bg-gray-100 border-2 border-gray-400 h-[40dvh] w-[25dvw] rounded-3xl shadow-2xl">
-            <div className="ColorBox1 bg-[#ffffff] mt-10 mx-auto h-20 w-20 rounded-sm relative">
-              <p className="absolute top-20">#ffffff</p>{" "}
-              <p className="absolute bottom-20">Text</p>
-            </div>
-            <div className="ColorBox2 bg-[#212121] mt-10 mx-auto h-20 w-20 rounded-sm relative">
-              <p className="absolute top-20">#212121</p>{" "}
-              <p className="absolute bottom-20">Background</p>
-            </div>
-            <div className="ColorBox3 bg-[#45b622] mt-10 mx-auto h-20 w-20 rounded-sm relative">
-              <p className="absolute top-20">#45b622</p>{" "}
-              <p className="absolute bottom-20">Primary</p>
-            </div>
-            <div className="ColorBox4 bg-[#404040] mx-auto h-20 w-20 rounded-sm relative">
-              <p className="absolute top-20">#404040</p>{" "}
-              <p className="absolute bottom-20">Secondary</p>
-            </div>
-            <div className="ColorBox5 bg-[#505050] mx-auto h-20 w-20 rounded-sm relative">
-              <p className="absolute top-20">#505050</p>{" "}
-              <p className="absolute bottom-20">Background.2</p>
-            </div>
-            <div className="ColorBox6 bg-[#746f35] mx-auto h-20 w-20 rounded-sm relative">
-              <p className="absolute top-20">#746f35</p>{" "}
-              <p className="absolute bottom-20">Accent</p>
-            </div>
+        <div className="ContainerGymApp3Right mt-12 lg:mt-0 flex justify-center items-center w-full lg:w-1/2">
+          <div className="GymAppColorchoise3 grid grid-cols-2 sm:grid-cols-3 gap-6 w-full max-w-md p-6 rounded-3xl shadow-2xl bg-gray-100 border-2 border-gray-400">
+            {[
+              { color: "#ffffff", label: "Text" },
+              { color: "#212121", label: "Background" },
+              { color: "#45b622", label: "Primary" },
+              { color: "#404040", label: "Secondary" },
+              { color: "#505050", label: "Background.2" },
+              { color: "#746f35", label: "Accent" },
+            ].map((box, i) => (
+              <div
+                key={i}
+                className={`my-5 h-20 w-20 mx-auto rounded-sm relative`}
+                style={{ backgroundColor: box.color }}
+              >
+                <p className="text-xs absolute -bottom-5 left-1/2 transform -translate-x-1/2">
+                  {box.color}
+                </p>
+                <p className="text-xs absolute -top-5 left-1/2 transform -translate-x-1/2">
+                  {box.label}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
-      <div className="projectPageContainer4 mt-10 flex justify-around items-center">
+      <div className="projectPageContainer4 mt-10 flex flex-col lg:flex-row justify-around items-center w-full min-h-[60vh]">
         <div className="ContainerGymApp4Left w-[60dvw] h-[60dvh] flex justify-center items-center">
-          <div className="GymAppColorchoise3 grid grid-flow-col grid-rows-4 gap-2 bg-gray-100 border-2 border-gray-400 ml-40 h-[35dvh] w-[4005dvw] rounded-3xl shadow-2xl">
+          <div className="GymAppColorchoise3 grid grid-flow-col grid-rows-4 gap-2 bg-gray-100 border-2 border-gray-400 md:ml-40 h-[35dvh] w-[4005dvw] rounded-3xl shadow-2xl">
             <div className="Font1 mx-auto h-auto w-25 font-bold text-6xl flex justify-center items-center">
               Titel
             </div>
