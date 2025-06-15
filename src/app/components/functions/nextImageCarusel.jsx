@@ -6,8 +6,18 @@ export default function nextImage() {
 
   let mesoImageGallery = [
     { src: "MesoApp/GymAppPage1.png", alt: "Første side av app" },
+    { src: "MesoApp/GymAppMobile2.png", alt: "Første side av app" },
+    { src: "MesoApp/GymAppMobile3.png", alt: "Første side av app" },
+    { src: "MesoApp/GymAppMobile4.png", alt: "Første side av app" },
+    { src: "MesoApp/GymAppMobile5.png", alt: "Første side av app" },
+    { src: "MesoApp/GymAppMobile6.png", alt: "Første side av app" },
+    { src: "MesoApp/GymAppMobile7.png", alt: "Første side av app" },
     { src: "MesoApp/GymAppPage2.png", alt: " side av app" },
     { src: "MesoApp/GymAppPage3.png", alt: " side av app" },
+    { src: "MesoApp/GymAppPage4.png", alt: " side av app" },
+    { src: "MesoApp/GymAppPage5.png", alt: " side av app" },
+    { src: "MesoApp/GymAppPage6.png", alt: " side av app" },
+    { src: "MesoApp/GymAppPage7.png", alt: " side av app" },
   ];
 }
 // Ta inn og display 2 bilder

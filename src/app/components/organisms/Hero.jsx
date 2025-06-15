@@ -18,7 +18,7 @@ export default function Hero() {
           <div className="col-start-1 col-span-4 row-start-1 flex">
             <h1 className="HeroText flex-1 text-zinc-50 text-lg sm:text-lg sm:pl-[18%] md:text-2xl lg:text-2xl xl:text-3xl xl:pl-[10%] leading-tight w-full">
               A strategic creative studio focused on building powerful web pages
-              that drives impact.
+              and apps that drives impact.
             </h1>
           </div>
 
