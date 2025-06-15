@@ -48,7 +48,7 @@ export default function projectPage() {
           </div>
 
           <img
-            src="/GymAppMobilPage1.png"
+            src="MesoApp/GymAppMobilPage1.png"
             className="MobileStartPageGymApp w-32 sm:w-40 md:w-48 lg:w-60 h-auto rounded-3xl border-4 border-[#45B622] shadow-2xl"
           ></img>
         </div>
@@ -57,17 +57,17 @@ export default function projectPage() {
       <div className="projectPageContainer2 flex flex-col lg:flex-row items-center justify-between gap-10 mt10 w-screen px-6">
         <div className="ContainerGymApp2Images relative w-screen md:mb-15 md:mt-5 lg:w-2/3 h-[60dvh] sm:h-[70vh] md:h-[85vh]">
           <img
-            src="/GymAppPage1.png"
+            src="MesoApp/GymAppPage1.png"
             alt="gymImage1"
             className="absolute top-10 right-4 sm:right-20 w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-10"
           ></img>
           <img
-            src="/GymAppPage2.png"
+            src="MesoApp/GymAppPage2.png"
             alt="gymImage2"
             className="absolute top-[27%] right-[25%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-20"
           ></img>
           <img
-            src="/GymAppPage3.png"
+            src="MesoApp/GymAppPage3.png"
             alt="gymImage3"
             className="absolute top-[47%] right-[45%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-30"
           ></img>
@@ -193,11 +193,11 @@ export default function projectPage() {
 
       <div className="projectPageContainer5 pt-30 pb-20 flex justify-around items-center shadow-sm shadow-gray-900">
         <img
-          src="/GymAppPage1.png"
+          src="MesoApp/GymAppPage1.png"
           className="ContainerGymApp5Left mb-5 ml-20 w-[50dvw] h-auto rounded-md shadow-2xl shadow-gray-800"
         ></img>
         <img
-          src="/GymAppMobilPage1.png"
+          src="MesoApp/GymAppMobilPage1.png"
           className="ContainerGymApp5Right mb-5 mr-20 w-[40dvh] h-auto rounded-3xl border-2 border-[#45b622] shadow-xl shadow-gray-800"
         ></img>
       </div>
