@@ -1,25 +1,61 @@
 "use client";
 import { useState } from "react";
+import React from "react";
+import "./ImgSlide.css"; // Husk å opprette denne!
 
-export default function nextImage() {
-  const [count, setCount] = useState(0);
+export default function ImageCarousel() {
+  const [index, setIndex] = useState(0);
 
-  let mesoImageGallery = [
-    { src: "MesoApp/GymAppPage1.png", alt: "Første side av app" },
-    { src: "MesoApp/GymAppMobile2.png", alt: "Første side av app" },
-    { src: "MesoApp/GymAppMobile3.png", alt: "Første side av app" },
-    { src: "MesoApp/GymAppMobile4.png", alt: "Første side av app" },
-    { src: "MesoApp/GymAppMobile5.png", alt: "Første side av app" },
-    { src: "MesoApp/GymAppMobile6.png", alt: "Første side av app" },
-    { src: "MesoApp/GymAppMobile7.png", alt: "Første side av app" },
-    { src: "MesoApp/GymAppPage2.png", alt: " side av app" },
-    { src: "MesoApp/GymAppPage3.png", alt: " side av app" },
-    { src: "MesoApp/GymAppPage4.png", alt: " side av app" },
-    { src: "MesoApp/GymAppPage5.png", alt: " side av app" },
-    { src: "MesoApp/GymAppPage6.png", alt: " side av app" },
-    { src: "MesoApp/GymAppPage7.png", alt: " side av app" },
+  const gallery = [
+    { src: "/GymAppPage1.png", alt: "App side 1" },
+    { src: "/GymAppPage2.png", alt: "App side 2" },
+    { src: "/GymAppPage3.png", alt: "App side 3" },
+    { src: "/GymAppPage4.png", alt: "App side 4" },
+    { src: "/GymAppPage5.png", alt: "App side 5" },
+    { src: "/GymAppPage6.png", alt: "App side 6" },
+    { src: "/GymAppPage7.png", alt: "App side 7" },
   ];
+
+  const prev = () => {
+    setIndex((prev) => (prev === 0 ? gallery.length - 1 : prev - 1));
+  };
+
+  const next = () => {
+    setIndex((prev) => (prev + 1) % gallery.length);
+  };
+
+  return (
+    <div className="carousel-container">
+      <div className="carousel">
+        {gallery.map((img, i) => {
+          let position = "nextSlide";
+          if (i === index) {
+            position = "activeSlide";
+          } else if (
+            i === index - 1 ||
+            (index === 0 && i === gallery.length - 1)
+          ) {
+            position = "lastSlide";
+          }
+
+          return (
+            <img
+              key={i}
+              src={img.src}
+              alt={img.alt}
+              className={`slide ${position}`}
+            />
+          );
+        })}
+      </div>
+      <div className="controls">
+        <button onClick={prev}>Prev</button>
+        <button onClick={next}>Next</button>
+      </div>
+    </div>
+  );
 }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Ta inn og display 2 bilder
 // V - H Knapper som bytter til eller fra neste bildet - med animasjon
 // når på siste bildet i rekke, og man trykker neste Loop tilbake til nr1, vise versa.

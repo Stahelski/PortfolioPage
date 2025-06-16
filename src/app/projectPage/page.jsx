@@ -2,6 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
+import ImageCarusel from "../components/functions/ImgSlider";
+import ImageTest from "../components/functions/imageTest";
 
 import Footer from "../components/organisms/Footer";
 
@@ -48,7 +50,7 @@ export default function projectPage() {
           </div>
 
           <img
-            src="MesoApp/GymAppMobilPage1.png"
+            src="/GymAppMobil1.png"
             className="MobileStartPageGymApp w-32 sm:w-40 md:w-48 lg:w-60 h-auto rounded-3xl border-4 border-[#45B622] shadow-2xl"
           ></img>
         </div>
@@ -57,17 +59,17 @@ export default function projectPage() {
       <div className="projectPageContainer2 flex flex-col lg:flex-row items-center justify-between gap-10 mt10 w-screen px-6">
         <div className="ContainerGymApp2Images relative w-screen md:mb-15 md:mt-5 lg:w-2/3 h-[60dvh] sm:h-[70vh] md:h-[85vh]">
           <img
-            src="MesoApp/GymAppPage1.png"
+            src="/GymAppPage1.png"
             alt="gymImage1"
             className="absolute top-10 right-4 sm:right-20 w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-10"
           ></img>
           <img
-            src="MesoApp/GymAppPage2.png"
+            src="/GymAppPage2.png"
             alt="gymImage2"
             className="absolute top-[27%] right-[25%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-20"
           ></img>
           <img
-            src="MesoApp/GymAppPage3.png"
+            src="/GymAppPage3.png"
             alt="gymImage3"
             className="absolute top-[47%] right-[45%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-30"
           ></img>
@@ -100,7 +102,7 @@ export default function projectPage() {
           </p>
         </div>
         <div className="ContainerGymApp3Right mt-12 lg:mt-0 flex justify-center items-center w-full lg:w-1/2">
-          <div className="GymAppColorchoise3 grid grid-cols-2 sm:grid-cols-3 gap-6 w-full max-w-md p-6 rounded-3xl shadow-2xl bg-gray-100 border-2 border-gray-400">
+          <div className="GymAppColorchoise3 grid grid-cols-2 sm:grid-cols-3 gap-6 w-full max-w-md p-6 rounded-3xl shadow-2xl text-zinc-950 bg-gray-100 border-2 border-gray-400">
             {[
               { color: "#ffffff", label: "Text" },
               { color: "#212121", label: "Background" },
@@ -125,83 +127,33 @@ export default function projectPage() {
           </div>
         </div>
       </div>
-
       <div className="projectPageContainer4 mt-10 flex flex-col lg:flex-row justify-around items-center w-full min-h-[60vh]">
-        <div className="ContainerGymApp4Left w-[60dvw] h-[60dvh] flex justify-center items-center">
-          <div className="GymAppColorchoise3 grid grid-flow-col grid-rows-4 gap-2 bg-gray-100 border-2 border-gray-400 md:ml-40 h-[35dvh] w-[4005dvw] rounded-3xl shadow-2xl">
-            <div className="Font1 mx-auto h-auto w-25 font-bold text-6xl flex justify-center items-center">
-              Titel
-            </div>
-            <div className="Font2 mx-auto h-auto w-25 font-bold text-3xl flex justify-center items-center">
-              Titel
-            </div>
-            <div className="Font3 mx-auto h-auto w-25 font-bold text-xl flex justify-center items-center">
-              {" "}
-              Body
-            </div>
-            <div className="Font4 mx-auto h-auto w-25 text-sm flex justify-center items-center">
-              Small
-            </div>
-            <div className="Font5 mx-auto h-auto w-25 font-bold text-6xl flex justify-center items-center">
-              64px
-            </div>
-            <div className="Font6 mx-auto h-auto w-25 font-bold text-3xl flex justify-center items-center">
-              32px
-            </div>
-            <div className="Font7 mx-auto h-auto w-25 font-bold text-xl flex justify-center items-center">
-              18px
-            </div>
-            <div className="Font8 mx-auto h-auto w-25 text-sm flex justify-center items-center">
-              14px
-            </div>
-            <div className="Font9 mx-auto h-auto w-25 text-6xl font-bold flex justify-center items-center">
-              R/B
-            </div>
-            <div className="Font10 mx-auto h-auto w-25 font-bold text-3xl flex justify-center items-center">
-              Bold
-            </div>
-            <div className="Font11 mx-auto h-auto w-25 text-xl font-bold flex justify-center items-center">
-              R/B
-            </div>
-            <div className="Font12 mx-auto h-auto w-25 text-sm flex justify-center items-center">
-              Regular
-            </div>
-            <div className="Font13 mx-auto h-auto w-80 text-6xl font-bold flex justify-center items-center">
-              Type: Play
-            </div>
-            <div className="Font14 mx-auto h-auto w-50 text-3xl font-bold flex justify-center items-center">
-              Type: Play
-            </div>
-            <div className="Font15 mx-auto h-auto w-40 text-xl font-bold flex justify-center items-center">
-              Type: Ronoto
-            </div>
-            <div className="Font16 mx-auto h-auto w-25 text-sm flex justify-center items-center">
-              Type: Roboto
-            </div>
-          </div>
+        {/* Venstre seksjon */}
+
+        <div className="GymAppColorchoise3 mt-15 mr-15 ml-15 flex flex-col justify-start items-center bg-gray-100 border-2 border-gray-400 p-4 rounded-3xl shadow-2xl w-1/2 max-w-3xl ">
+          <p className="text-5xl font-bold p-2">Fonts</p>
+          <p className="font-bold text-4xl p-4">Title 32px Bold Type: Inter</p>
+          <p className="text-2xl p-2">Body 18px Regular/Bold</p>
+          <p className="text-lg p-4">Small 14px Regular</p>
         </div>
 
-        <div className="ContainerGymApp4Right pt-35 w-[45dvw] h-[60dvh]">
-          <p className="text-5xl flex justify-center items-center">
+        {/* Høyre seksjon */}
+        <div className="ContainerGymApp4Righ my-15 ml-15 mr-5 w-full lg:w-1/2 max-w-2xl text-center lg:text-left px-4">
+          <p className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Font choise
           </p>
-          <p className="text-md flex justify-center items-center">
-            Some text explaining why i selected thees colors
+          <p className="text-base sm:text-md md:text-lg leading-relaxed">
+            I chose Play and Roboto for their clean, modern look that fits the
+            active, energetic vibe of a fitness app. Play adds a slightly sporty
+            and dynamic feel with its angular shapes, while Roboto ensures
+            readability and a sleek, professional look across all screens.
+            Together, they create a balanced, athletic aesthetic that's both
+            motivating and user-friendly.
           </p>
         </div>
       </div>
-
-      <div className="projectPageContainer5 pt-30 pb-20 flex justify-around items-center shadow-sm shadow-gray-900">
-        <img
-          src="MesoApp/GymAppPage1.png"
-          className="ContainerGymApp5Left mb-5 ml-20 w-[50dvw] h-auto rounded-md shadow-2xl shadow-gray-800"
-        ></img>
-        <img
-          src="MesoApp/GymAppMobilPage1.png"
-          className="ContainerGymApp5Right mb-5 mr-20 w-[40dvh] h-auto rounded-3xl border-2 border-[#45b622] shadow-xl shadow-gray-800"
-        ></img>
-      </div>
-
+      <ImageTest />
+      <ImageCarusel />
       <Footer />
     </div>
   );
