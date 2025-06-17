@@ -16,25 +16,23 @@ export default function ProjectSection() {
           <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-4xl rounded-xl overflow-hidden shadow-sm backdrop-blur-md bg-zink-50 p-4">
             {/* Desktop Image */}
             <div className="hidden sm:block">
-              <Image
+              <img
                 src="/GymAppPage123.png"
                 alt="Gym App Desktop Preview"
                 width={600}
                 height={400}
                 className="mx-auto"
-                priority
               />
             </div>
 
             {/* Mobile Image */}
             <div className="block sm:hidden">
-              <Image
+              <img
                 src="/GymAppPage123MobilLeft.png"
                 alt="Gym App Mobile Preview"
                 width={350}
                 height={600}
                 className="mx-auto"
-                priority
               />
             </div>
           </div>

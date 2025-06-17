@@ -5,19 +5,13 @@ import Link from "next/link";
 import ImageCarusel from "../components/functions/ImgSlider";
 import ImageTest from "../components/functions/imageTest";
 
+import PageNavbar from "../components/organisms/PageNavbar";
 import Footer from "../components/organisms/Footer";
 
 export default function projectPage() {
   return (
     <div className="ProjectPageGymmApp grid grig-row-1 w-screen">
-      <div className="AboutNavbar mx-auto mt-6 mb-4 h-[10vh] w-[95%] rounded-2xl flex flex-col sm:flex-row justify-around items-center px-4">
-        <Link href="/" className="cursor-pointer text-[6dvh]">
-          FrontendForge
-        </Link>
-        <Link href="/contactPage" className="cursor-pointer text-[6dvh]">
-          Contact
-        </Link>
-      </div>
+      <PageNavbar />
 
       <div className="projectPageContainer1 flex flex-col lg:flex-row justify-around items-center w-full px-6 py-8 gap-8">
         <div className="ContainerGymApp1Left max-w-xl">

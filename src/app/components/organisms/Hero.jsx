@@ -12,17 +12,15 @@ export default function Hero() {
         <Navbar />
         <Sidebar />
 
-        {/* Main content grid */}
         <div className="grid grid-rows-6 grid-cols-6 h-full gap-8 px-15 pt-4 sm:px-2 md:px-2 lg:pr-5 lg:pl-20">
-          {/* Main headline */}
           <div className="col-start-1 col-span-4 row-start-1 flex">
             <h1 className="HeroText flex-1 text-zinc-50 text-lg sm:text-lg sm:pl-[18%] md:text-2xl lg:text-2xl xl:text-3xl xl:pl-[10%] leading-tight w-full">
               A strategic creative studio focused on building powerful web pages
               and apps that drives impact.
             </h1>
           </div>
+          
 
-          {/* About text */}
           <div className="col-start-4 col-span-4 row-start-5 flex items-end">
             <p className="HeroText text-sm sm:text-base md:text-lg lg:text-xl text-zinc-100 leading-relaxed max-w-xl">
               Hello, my name is Stian Karlsen and I am a web dev located in

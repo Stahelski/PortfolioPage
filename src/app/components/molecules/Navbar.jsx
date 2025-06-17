@@ -12,12 +12,20 @@ export default function Navbar() {
         <div className="sm:text-[4dvh] sm:ml-5 lg:text-[6dvh]">
           FrontendForge
         </div>
+        <div className="flex gap-21">
         <Link
           href="/contactPage"
-          className="cursor-pointer sm:text-[4dvh]  lg:text-[6dvh]"
+          className="cursor-pointer text-xl sm:text-3xl md:text-5xl"
         >
           Contact
         </Link>
+        <Link
+          href="/aboutPage"
+          className="cursor-pointer text-xl sm:text-3xl md:text-5xl"
+        >
+          About
+        </Link>
+        </div>
       </div>
     </>
   );
