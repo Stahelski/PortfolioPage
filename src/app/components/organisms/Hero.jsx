@@ -9,24 +9,24 @@ import HeroBG from "../atoms/HeroBG";
 export default function Hero() {
   return (
     <div className="HeroMainContainer relative z-[2] h-[60dvh] sm:h-screen w-screen flex justify-center items-center">
-      <h1 className="absolute top-4 mx-auto sm:left-8 text-[#F5C19A] text-5xl z-5">
+      <h1 className="absolute top-4 mx-auto sm:left-8 text-[#F5C19A] text-4xl z-5">
         FrontendForge
       </h1>
-      <div className="HeroMain relative h-3/4 w-3/4 z-[1] mt-10 lg:mt-10 xl:mt-0 bg-white/5 backdrop-blur-sm">
+      <div className="HeroMain relative h-3/4 w-3/4 z-[1] mt-12  bg-white/5 backdrop-blur-sm">
         <Navbar />
         {/* <Sidebar /> */}
 
         <div className="flex justify-center items-start w-full h-full">
-          <div className="flex flex-col items-center text-xl sm:text-4xl md:text-5xl xl:text-7xl mt-5 sm:mt-21">
+          <div className="flex flex-col items-center text-xl sm:text-4xl md:text-5xl xl:text-6xl mt-5 sm:mt-21">
             <h1 className="text-[#FFF4EB] mb-2">A strategic creative studio</h1>
             <h1 className="text-[#FFF4EB]">That drives impact!</h1>
-            <p className="text-xs sm:text-md md:text-lg lg:text-xl text-[#FFE8CF] mt-8">
+            <p className="text-xs sm:text-sm md:text-md lg:text-lg text-[#FFE8CF] mt-8">
               I'm Stian Karlsen, a web developer located in
             </p>
-            <p className="text-xs sm:text-md md:text-lg lg:text-xl text-[#FFE8CF]">
+            <p className="text-xs sm:text-sm md:text-md lg:text-lg text-[#FFE8CF]">
               Norway. I truly enjoy designing and building
             </p>
-            <p className="text-xs sm:text-md md:text-lg lg:text-xl text-[#FFE8CF]">
+            <p className="text-xs sm:text-sm md:text-md lg:text-lg text-[#FFE8CF]">
               Webpages
             </p>
           </div>
