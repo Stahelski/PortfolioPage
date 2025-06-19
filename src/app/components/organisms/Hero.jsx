@@ -4,70 +4,52 @@ import Link from "next/link";
 import Navbar from "../molecules/Navbar";
 import Sidebar from "../molecules/Sidebar";
 import HeroBG from "../atoms/HeroBG";
+// import SilkPulsBackground from "../molecules/SilkPulsBackground";
 
 export default function Hero() {
   return (
-    <div className="HeroMainContainer relative z-[2] h-screen flex justify-center items-center">
-      <div className="HeroMain relative h-3/4 w-3/4 z-[1] bg-white/5 backdrop-blur-sm">
+    <div className="HeroMainContainer relative z-[2] h-[60dvh] sm:h-screen w-screen flex justify-center items-center">
+      <h1 className="absolute top-4 mx-auto sm:left-8 text-[#F5C19A] text-5xl z-5">
+        FrontendForge
+      </h1>
+      <div className="HeroMain relative h-3/4 w-3/4 z-[1] mt-10 lg:mt-10 xl:mt-0 bg-white/5 backdrop-blur-sm">
         <Navbar />
-        <Sidebar />
+        {/* <Sidebar /> */}
 
-        <div className="grid grid-rows-6 grid-cols-6 h-full gap-8 px-15 pt-4 sm:px-2 md:px-2 lg:pr-5 lg:pl-20">
-          <div className="col-start-1 col-span-4 row-start-1 flex">
-            <h1 className="HeroText flex-1 text-zinc-50 text-lg sm:text-lg sm:pl-[18%] md:text-2xl lg:text-2xl xl:text-3xl xl:pl-[10%] leading-tight w-full">
-              A strategic creative studio focused on building powerful web pages
-              and apps that drives impact.
-            </h1>
-          </div>
-          
-
-          <div className="col-start-4 col-span-4 row-start-5 flex items-end">
-            <p className="HeroText text-sm sm:text-base md:text-lg lg:text-xl text-zinc-100 leading-relaxed max-w-xl">
-              Hello, my name is Stian Karlsen and I am a web dev located in
-              Norway. Spending time designing and building web pages is
-              something I truly enjoy. At the end of the day, I go to the gym to
-              clear my mind and recharge, building and getting stronger is
-              something I try and implement in every aspect of my life.
+        <div className="flex justify-center items-start w-full h-full">
+          <div className="flex flex-col items-center text-xl sm:text-4xl md:text-5xl xl:text-7xl mt-5 sm:mt-21">
+            <h1 className="text-[#FFF4EB] mb-2">A strategic creative studio</h1>
+            <h1 className="text-[#FFF4EB]">That drives impact!</h1>
+            <p className="text-xs sm:text-md md:text-lg lg:text-xl text-[#FFE8CF] mt-8">
+              I'm Stian Karlsen, a web developer located in
+            </p>
+            <p className="text-xs sm:text-md md:text-lg lg:text-xl text-[#FFE8CF]">
+              Norway. I truly enjoy designing and building
+            </p>
+            <p className="text-xs sm:text-md md:text-lg lg:text-xl text-[#FFE8CF]">
+              Webpages
             </p>
           </div>
         </div>
       </div>
+      {/* <SilkPulsBackground /> */}
       <HeroBG />
     </div>
   );
 }
-// "use client";
-// import React from "react";
-// import Link from "next/link";
-// import Navbar from "../molecules/Navbar";
-// import Sidebar from "../molecules/Sidebar";
-// import HeroBG from "../atoms/HeroBG";
+{
+  /* <div className="col-start-1 col-span-4 row-start-1 flex">
+<h1 className="HeroText flex-1 text-zinc-50 text-lg sm:text-lg sm:pl-[18%] md:text-2xl lg:text-2xl xl:text-4xl xl:pl-[10%] xl:pt-8 leading-tight w-full">
+  <p>A strategic creative studio</p>
+  <p>Focused on building powerful web pages</p>
+  <p>And apps that drives impact.</p>
+</h1>
+</div>
 
-// export default function Hero() {
-//   return (
-//     <>
-//       <div className="HeroMainContainer z-[2] h-[100dvh] flex justify-center items-center">
-//         <div className="HeroMain relative h-[75%] w-[75%]  z-[1] bg-white/5 backdrop-blur-xs">
-//           <Navbar />
-//           <Sidebar />
-//           <div className="HeroText text-amber-50 sm:w-[35dvw] sm:ml-25 sm:mt-5 sm:text-[2.5dvh] lg:w-[35dvw] lg:ml-40 lg:mt-7 lg:text-[2.5dvh]">
-//             A strategic creative studio focused on building powerful web pages
-//             that Drives Impact.
-//           </div>
-
-//           <div className="absolute top-60 left-12 w-fit md:top-70 md:left-20 md:w-full lg:left-80 lg:top-75 max-w-lg text-left sm:1/2 px-2 sm:px-4">
-//             <p className="HeroText text-sm sm:text-base lg:text-lg text-zinc-100 leading-relax">
-//               Hello, my name is Stian Karlsen and i am a web dev located in
-//               Norway. Spending time designing and building web pages is
-//               something i truly enjoy. At the end of the day, i go to the gym to
-//               clear my mind and recharge, building and getting stronger is
-//               something i try and implement in every aspect of my life.
-//             </p>
-//           </div>
-//         </div>
-//         <HeroBG />
-//       </div>
-//     </>
-//   );
-// }
-// text-amber-50 sm:mx-auto sm:w-[35dvw] sm:mt-18 sm:text-[2.5dvh] lg:w-[35dvw] lg:mt-55 lg:mr-30 lg:text-[2.5dvh]
+<div className="col-start-5 col-span-2 row-start-5 flex items-end">
+<p className="HeroText text-sm sm:text-base md:text-lg lg:text-xl text-zinc-100 leading-relaxed max-w-xl">
+  I'm Stian Karlsen, a web developer located in Norway. I truly
+  enjoy designing and building websites.
+</p>
+</div> */
+}

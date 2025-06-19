@@ -3,14 +3,14 @@
 import React from "react";
 import Link from "next/link";
 import Footer from "@/app/components/organisms/Footer";
-import PageNavbar from "../components/organisms/PageNavbar";
+import ContactNavbar from "./ContactNavbar";
 
 export default function contactPage() {
   return (
     <div className="ContactPageContainer min-h-screen">
       {/* mx-auto for å sentrere */}
 
-      <PageNavbar />
+      <ContactNavbar />
       <div className="ContactTopContainer h-[40dvh] w-full flex flex-col md:flex-row justify-around items-cente px-4 py-10 gap-6">
         <div className="TextTop bg-transparent font-bold text-2xl md:text-6xl flex items-center">
           Contact

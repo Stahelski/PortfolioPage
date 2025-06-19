@@ -8,26 +8,38 @@ export default function Navbar() {
   return (
     // Alle små komponenter som Button, Navbar, Sidebar, kan bruke h-[dvh/dvw]. Og større komponenter som div imageConfigDefault, bruk heller h-[%]
     <>
-      <div className="Navbar z-[5] h-[7.8dvh] w-fill flex justify-around items-center  rounded-[27px_27px_0_0] ">
-        <div className="sm:text-[4dvh] sm:ml-5 lg:text-[6dvh]">
-          FrontendForge
-        </div>
-        <div className="flex gap-21">
-        <Link
-          href="/contactPage"
-          className="cursor-pointer text-xl sm:text-3xl md:text-5xl"
-        >
-          Contact
-        </Link>
+      <div className="Navbar z-[5] h-[7.8dvh] w-full flex justify-around items-center md:px-38 rounded-[27px_27px_0_0] ">
         <Link
           href="/aboutPage"
-          className="cursor-pointer text-xl sm:text-3xl md:text-5xl"
+          className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl"
         >
-          About
+          Pricing
         </Link>
-        </div>
+
+       
+          <Link
+            href="/contactPage"
+            className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl"
+          >
+            Contact
+          </Link>
+          <Link
+            href="/aboutPage"
+            className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl"
+          >
+            About
+          </Link>
+
+          <a
+            href="https://github.com/Stahelski"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl"
+          >
+            Github
+          </a>
+        
       </div>
     </>
   );
 }
-

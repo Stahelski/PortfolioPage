@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import Footer from "@/app/components/organisms/Footer";
-import PageNavbar from "../components/organisms/PageNavbar";
+import AboutNavbar from "./aboutNavbar";
 import React from "react";
 
 export default function AboutPage() {
   return (
     <div className="min-h-[200dvh] w-full flex flex-col text-[#546e70]">
-      <PageNavbar />
+      <AboutNavbar />
 
       {/* Top Section */}
       <div className="w-full flex flex-col-reverse md:flex-row justify-center items-center px-6 py-10 gap-10">

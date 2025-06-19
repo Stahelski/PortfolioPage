@@ -6,7 +6,7 @@
 
   --SideBarBackground: #fffa65;
   --SideButton: #000000;
-  --SideButtonHover: #2e2e2e;
+  --SideButtonHover: #8d673c;
   --SideButtonBorder: linear-gradient(to right, #888888, #bdc98c);
 
   --ProjectSectionBackground: #fffdf4;
@@ -24,7 +24,6 @@ body {
 }
 h1 {
   font-family: "Play", sans-serif;
-  width: 250px;
   height: auto;
 }
 
@@ -37,8 +36,10 @@ h1 {
 .Navbar,
 .AboutNavbar,
 .ContactPageNavbar {
-  background-color: var(--NavbarColor);
+  /* background-color: var(--NavbarColor); */
   font-family: Play;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  color: #f5c19a;
 }
 
 /* //! */
@@ -48,11 +49,12 @@ RoundBtn - Artstation, Github, Mail
 */
 .Sidebar {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-  background-color: var(--SideBarBackground);
+  /* background-color: var(--SideBarBackground); */
 }
 
 .RoundBtnGradient {
-  background: var(--SideButtonBorder);
+  /* background: var(--SideButtonBorder); */
+  background-color: #b67b51a4;
 }
 .RoundBtn {
   background: var(--SideButton);
@@ -77,7 +79,7 @@ RoundBtn - Artstation, Github, Mail
   border-radius: 27px;
   box-shadow: 0px 0px 60px 0px #000000;
 }
-.HeroText{
+.HeroText {
   text-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
@@ -85,11 +87,13 @@ RoundBtn - Artstation, Github, Mail
 /* Project Section */
 .ProjectSectionContainer {
   background-color: var(--ProjectSectionBackground);
+
   box-shadow: 0px 0px 5px 0px #616161;
 }
 
 .ProjectImageContainer {
   background-color: var(--ProjectSectionBackground);
+
   box-shadow: 3px 3px 21px 0px #616161;
   border-radius: 27px;
 }
@@ -200,6 +204,7 @@ textarea.InputContactPage {
 /* Gym App Project Page */
 .ProjectPageGymmApp {
   background-color: var(--ProjectSectionGraybox);
+  /* background-color: #546e70; */
   color: #546e70;
 }
 
@@ -207,7 +212,7 @@ textarea.InputContactPage {
   background-color: var(--FooterColor);
 }
 .projectPageContainer2 {
-  background-color: var(--SideButtonHover);
+  background-color: #2e2e2e;
   box-shadow: 1px 1px 10px 5px #2d2d2d;
   color: rgb(226, 226, 226);
 }

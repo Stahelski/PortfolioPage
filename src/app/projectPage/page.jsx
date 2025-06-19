@@ -5,13 +5,13 @@ import Link from "next/link";
 import ImageCarusel from "../components/functions/ImgSlider";
 import ImageTest from "../components/functions/imageTest";
 
-import PageNavbar from "../components/organisms/PageNavbar";
+import ProjectNavbar from "./ProjectNavbar";
 import Footer from "../components/organisms/Footer";
 
 export default function projectPage() {
   return (
     <div className="ProjectPageGymmApp grid grig-row-1 w-screen">
-      <PageNavbar />
+      <ProjectNavbar />
 
       <div className="projectPageContainer1 flex flex-col lg:flex-row justify-around items-center w-full px-6 py-8 gap-8">
         <div className="ContainerGymApp1Left max-w-xl">
