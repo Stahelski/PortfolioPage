@@ -9,12 +9,12 @@ export default function Navbar() {
     // Alle små komponenter som Button, Navbar, Sidebar, kan bruke h-[dvh/dvw]. Og større komponenter som div imageConfigDefault, bruk heller h-[%]
     <>
       <div className="Navbar z-[5] h-[7.8dvh] w-full flex justify-around items-center md:px-38 rounded-[27px_27px_0_0] ">
-        <Link
+        {/* <Link
           href="/"
           className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl"
         >
           Pricing
-        </Link>
+        </Link> */}
 
         <Link
           href="/contactPage"

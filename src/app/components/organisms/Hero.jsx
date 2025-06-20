@@ -14,7 +14,6 @@ export default function Hero() {
       </h1>
       <div className="HeroMain relative h-3/4 w-3/4 z-[1] mt-12  bg-white/5 backdrop-blur-sm">
         <Navbar />
-        {/* <Sidebar /> */}
 
         <div className="flex justify-center items-start w-full h-full">
           <div className="flex flex-col items-center text-xl sm:text-4xl md:text-5xl xl:text-6xl mt-5 sm:mt-21">

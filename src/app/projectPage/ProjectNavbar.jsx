@@ -11,12 +11,12 @@ export default function PageNavbar() {
           FrontendForge
         </Link>
 
-        <Link
+        {/* <Link
           href="/aboutPage"
           className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl"
         >
           Pricing
-        </Link>
+        </Link> */}
 
         <Link
           href="/contactPage"
