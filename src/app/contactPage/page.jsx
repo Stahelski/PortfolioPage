@@ -4,37 +4,79 @@ import React from "react";
 import Link from "next/link";
 import Footer from "@/app/components/organisms/Footer";
 import ContactNavbar from "./ContactNavbar";
+import HeroBG from "../components/atoms/HeroBG";
 
 export default function contactPage() {
   return (
-    <div className="ContactPageContainer min-h-screen">
-      {/* mx-auto for å sentrere */}
+    <div className="ContactPageContainer relative z-[1] h-[60dvh] sm:h-screen w-screen flex flex-col items-center justify-center">
+      <Link
+        href="/"
+        className="absolute top-4 mx-auto sm:left-8 text-[#F5C19A] text-4xl z-5"
+      >
+        <h1>FrontendForge</h1>
+      </Link>
 
-      <ContactNavbar />
-      <div className="ContactTopContainer h-[40dvh] w-full flex flex-col md:flex-row justify-around items-cente px-4 py-10 gap-6">
-        <div className="TextTop bg-transparent font-bold text-2xl md:text-6xl flex items-center">
-          Contact
-        </div>
+      <div className="ContactPageCard h-2/3 w-3/4 z-[5] mt-12 flex flex-col bg-white/5 backdrop-blur-sm">
+        <ContactNavbar />
+        {/* <form>: Selve skjemaet. action angir hvor dataene skal sendes, og method="POST" brukes for å sende data sikkert. */}
+        <form
+          className="w-full h-full flex justify-center items-center"
+          action="/send-message"
+          method="POST"
+        >
+          <div className="Left bg-transparent w-1/2 flex flex-col">
+            <div className="NameFeeld flex justify-start items-center">
+              <img className="h-8 w-8 mr-1" src="/user.png" alt="user icon" />
+              <input
+                className="Name w-20 h-8 text-amber-50 bg-transparent border-b-2 border-white outline-none pt-3"
+                type="text"
+                id="name"
+                placeholder="Name:"
+                required
+              ></input>
+            </div>
+
+            <div className="EmailFeeld flex justify-start items-center">
+              <img className="w-8 h-8 mr-1" src="/Epost.svg" alt="email icon" />
+              <input
+                className="Email w-20 h-8 text-amber-50 bg-transparent border-b-2 border-white outline-none pt-3"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email:"
+                required
+              ></input>
+            </div>
+
+            <div className="PhoneFeeld flex justify-start items-center">
+              <img className="w-8 h-8 mr-1" src="/phone.png" alt="phone icon" />
+              <input
+                className="Phone w-20 h-8 text-amber-50 bg-transparent border-b-2 border-white outline-none pt-3"
+                type="num"
+                id="phone"
+                name="phone"
+                placeholder="Phone:"
+              ></input>
+            </div>
+          </div>
+
+          <div className="w-1/2 h-1/1 flex flex-col items-center justify-center">
+            <textarea
+              className="Right w-5/6 h-1/2 p-2 text-white bg-white/25 rounded-2xl outline-none"
+              id="message"
+              name="message"
+              placeholder="Message.."
+              required
+            ></textarea>
+
+            <button className="top-17 right-12 text-white" type="submit">
+              Send
+            </button>
+          </div>
+        </form>
       </div>
 
-      <div className="TextEmailContainer w-screen h-[15dvh] pt-10 text-[6vw] md:text-[40px] pl-45 flex justify-start items-center">
-        Send me an email
-      </div>
-
-      <div className="ContactContainer w-[80vw] h-[60dvh] flex flex-col md:flex-row justify-center items-start mx-auto px-6 gap-8 pb-16">
-        <div className="LeftPart w-full md:w-1/2 flex flex-col items-start">
-          <div className="mt-2 text-lg font-semibold">Name</div>
-          <input className="InputContactPage w-full p-3 mt-2 border border-gray-300 rounded"></input>
-
-          <div className="mt-8 text-lg font-semibold">Email</div>
-          <input className="InputContactPage w-full p-3 mt-2 border border-gray-300 rounded"></input>
-        </div>
-        <div className="RightPart w-full md:w-1/2">
-          <div className="mt-2 text-lg font-semibold">Message</div>
-          <textarea className="InputContactPage InputContactPage w-full h-60 p-3 mt-2 border border-gray-300 rounded resize-none"></textarea>
-        </div>
-      </div>
-      <Footer />
+      <HeroBG />
     </div>
   );
 }

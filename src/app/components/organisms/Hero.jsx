@@ -15,6 +15,20 @@ export default function Hero() {
       <div className="HeroMain relative h-3/4 w-3/4 z-[1] mt-12  bg-white/5 backdrop-blur-sm">
         <Navbar />
 
+        {/* <svg>
+          <filter id="glass-distortion">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.01 0.01"
+              numOctaves="1"
+              seed="5"
+              result="turbulence"
+            />
+            <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap"/>
+            <feDisplacementMap in="SourceGraphic" in2="softMap" scale="150"/>
+          </filter>
+        </svg> */}
+
         <div className="flex justify-center items-start w-full h-full">
           <div className="flex flex-col items-center text-xl sm:text-4xl md:text-5xl xl:text-6xl mt-5 sm:mt-21">
             <h1 className="text-[#FFF4EB] mb-2">A strategic creative studio</h1>

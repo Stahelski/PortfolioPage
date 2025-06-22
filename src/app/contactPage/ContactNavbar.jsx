@@ -3,35 +3,11 @@ import Link from "next/link";
 export default function ContactNavbar() {
   return (
     <>
-      <div className="AboutNavbar z-[5] h-[7.8dvh] w-full flex justify-around items-center md:px-38">
-        <Link
-          href="/"
-          className="cursor-pointer text-md sm:text-3xl md:text-4xl xl:text-5xl"
-        >
-          FrontendForge
-        </Link>
-
-        {/* <Link
-          href="/aboutPage"
-          className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl"
-        >
-          Pricing
-        </Link> */}
-
-        <Link
-          href="/aboutPage"
-          className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl"
-        >
-          About
-        </Link>
-
+      <div className="Navbar z-[5] h-[7.8dvh] w-full flex justify-around items-center rounded-[27px_27px_0_0] md:px-38">
         <a
-          href="https://github.com/Stahelski"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl"
+          className="cursor-pointer text-md sm:text-2xl md:text-3xl xl:text-4xl text-amber-50"
         >
-          Github
+          Send me an Email
         </a>
       </div>
     </>
