@@ -21,18 +21,18 @@ export default function SilkWaveBackground() {
       </div>
 
       <div style={{ position: "fixed", top: 20, right: 25, zIndex: 100 }}>
-        {colorPalet.map((color) => (
+        {colorPalet.map((fargeKode) => (
           <button
-            key={color}
-            onClick={() => setBgColor(color)}
+            key={fargeKode}
+            onClick={() => setBgColor(fargeKode)}
             style={{
-              backgroundColor: color,
+              backgroundColor: fargeKode,
               width: 10,
               height: 10,
               borderRadius: "50%",
               margin: "5px",
               cursor: "pointer",
-              border: bgColor === color ? "2px solid white" : "none",
+              border: bgColor === fargeKode ? "2px solid white" : "none",
             }}
           />
         ))}
