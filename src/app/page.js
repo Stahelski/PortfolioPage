@@ -3,8 +3,8 @@ import React from "react";
 import Hero from "./components/organisms/Hero";
 import ProjectSection from "./components/organisms/projectSection";
 import Footer from "./components/organisms/Footer";
+import SilkWaveBackground from "./components/molecules/SilkWaveBackground";
 
-// import SilkPulsBackground from "./components/molecules/SilkPulsBackground";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <ProjectSection />
       <Footer />
-      {/* <SilkPulsBackground /> */}
+      <SilkWaveBackground />
     </div>
   );
 }

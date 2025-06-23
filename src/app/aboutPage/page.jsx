@@ -7,7 +7,7 @@ import React from "react";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-[200dvh] w-full flex flex-col text-[#546e70]">
+    <div className="min-h-[100dvh] w-full flex flex-col text-[#546e70]">
       <AboutNavbar />
 
       {/* Top Section */}
@@ -71,25 +71,7 @@ export default function AboutPage() {
         ))}
       </div>
 
-      {/* Bottom Section */}
-      <div className="flex flex-col md:flex-row justify-center items-center px-6 py-10 gap-10">
-        {/* Image */}
-        <div className="bg-gray-100 w-full md:w-[40%] h-[50vh] rounded-[27px]" />
-
-        {/* Text */}
-        <div className="w-full md:w-[50%] space-y-4 text-base md:text-lg">
-          <h2 className="text-2xl md:text-3xl font-semibold">Random facts</h2>
-          <p>
-            ⏺ I used to spend my spare time carving wood and making fine
-            furniture — still love the smell of sawdust.
-          </p>
-          <p>
-            ⏺ I might have been a pretty solid Call of Duty player back in 2014.
-          </p>
-          <p>⏺ My favorite food, reheated chili con carne.</p>
-          <p>⏺ I proudly embrace my inner couch potato on the weekends 🛋️</p>
-        </div>
-      </div>
+  
 
       {/* Bottom Divider */}
       <div className="h-px bg-black w-full" />

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function ProjectSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-8 px-4 py-10 sm:flex-row sm:py-16 lg:h-screen">
+    <section className="flex flex-col items-center justify-center gap-8 px-4 py-10 sm:flex-row sm:py-16 lg:h-screen bg-zinc-50/70">
       {/* Project Image Link */}
       <Link
         href="/projectPage"
