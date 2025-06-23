@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function PageNavbar() {
   return (
     <>
-      <div className="AboutNavbar z-[5] h-[7.8dvh] w-full flex justify-around items-center md:px-38">
+      <div className="AboutNavbar z-[5] h-[8dvh] w-full flex justify-around items-center md:px-38">
         <Link
           href="/"
           className="cursor-pointer text-md sm:text-3xl md:text-4xl xl:text-5xl"

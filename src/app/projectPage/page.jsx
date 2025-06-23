@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import ImageCarusel from "../components/functions/ImgSlider";
-import ImageTest from "../components/functions/imageTest";
+// import ImageTest from "../components/functions/imageTest";
 
 import ProjectNavbar from "./ProjectNavbar";
 import Footer from "../components/organisms/Footer";
@@ -121,10 +121,10 @@ export default function projectPage() {
           </div>
         </div>
       </div>
-      <div className="projectPageContainer4 mt-10 flex flex-col lg:flex-row justify-around items-center w-full min-h-[60vh]">
+      <div className="projectPageContainer4 mt-10 flex flex-col lg:flex-row justify-around items-center w-full min-h-[70vh]">
         {/* Venstre seksjon */}
 
-        <div className="GymAppColorchoise3 mt-15 mr-15 ml-15 flex flex-col justify-start items-center bg-gray-100 border-2 border-gray-400 p-4 rounded-3xl shadow-2xl w-1/2 max-w-3xl ">
+        <div className="GymAppColorchoise3 mr-15 ml-15 flex flex-col justify-start items-center bg-gray-100 border-2 border-gray-400 p-4 rounded-3xl shadow-2xl w-1/2 max-w-3xl ">
           <p className="text-5xl font-bold p-2">Fonts</p>
           <p className="font-bold text-4xl p-4">Title 32px Bold Type: Inter</p>
           <p className="text-2xl p-2">Body 18px Regular/Bold</p>
@@ -146,7 +146,7 @@ export default function projectPage() {
           </p>
         </div>
       </div>
-      <ImageTest />
+      {/* <ImageTest /> */}
       <ImageCarusel />
       <Footer />
     </div>
