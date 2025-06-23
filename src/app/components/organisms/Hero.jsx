@@ -5,7 +5,6 @@ import Navbar from "../molecules/Navbar";
 // import HeroBG from "../atoms/HeroBG";
 // import SilkWaveBackground from "../molecules/SilkWaveBackground";
 
-
 export default function Hero() {
   return (
     <div className="HeroMainContainer relative z-[2] h-[60dvh] sm:h-screen w-screen flex justify-center items-center">
@@ -15,19 +14,19 @@ export default function Hero() {
       <div className="HeroMain relative h-3/4 w-3/4 z-[1] mt-12  bg-white/5 backdrop-blur-sm">
         <Navbar />
 
-  
-
         <div className="flex justify-center items-start w-full h-full">
           <div className="flex flex-col items-center text-xl sm:text-4xl md:text-5xl xl:text-6xl mt-5 sm:mt-21">
-            <h1 className="text-[#FFF4EB] mb-2">A strategic creative studio</h1>
-            <h1 className="text-[#FFF4EB]">That drives impact!</h1>
-            <p className="text-xs sm:text-sm md:text-md lg:text-lg text-[#FFE8CF] mt-8">
+            <h1 className="text-[#fff4ebba] mb-2">
+              A strategic creative studio
+            </h1>
+            <h1 className="text-[#fff4ebba]">That drives impact!</h1>
+            <p className="text-xs sm:text-sm md:text-md lg:text-lg text-[#fff0e0] mt-8">
               I'm Stian Karlsen, a web developer located in
             </p>
-            <p className="text-xs sm:text-sm md:text-md lg:text-lg text-[#FFE8CF]">
+            <p className="text-xs sm:text-sm md:text-md lg:text-lg text-[#fff0e0]">
               Norway. I truly enjoy designing and building
             </p>
-            <p className="text-xs sm:text-sm md:text-md lg:text-lg text-[#FFE8CF]">
+            <p className="text-xs sm:text-sm md:text-md lg:text-lg text-[#fff0e0]">
               Webpages
             </p>
           </div>
