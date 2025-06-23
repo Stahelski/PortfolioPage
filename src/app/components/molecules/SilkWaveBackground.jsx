@@ -20,7 +20,7 @@ export default function SilkWaveBackground() {
         />
       </div>
 
-      <div style={{ position: "fixed", top: 20, left: 920, zIndex: 100 }}>
+      <div style={{ position: "fixed", top: 20, right: 25, zIndex: 100 }}>
         {colorPalet.map((color) => (
           <button
             key={color}

@@ -6,14 +6,14 @@ import Link from "next/link";
 
 export default function ProjectSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-8 px-4 py-10 sm:flex-row sm:py-16 lg:h-screen bg-zinc-50/70">
+    <section className="flex flex-col items-center justify-center gap-8 px-4 py-10 sm:flex-row sm:py-16  bg-white">
       {/* Project Image Link */}
       <Link
         href="/projectPage"
         className="flex justify-center items-center w-full sm:w-1/2"
       >
-        <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-4xl rounded-xl overflow-hidden shadow-lg backdrop-blur-md bg-white/50 p-4">
-          <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-4xl rounded-xl overflow-hidden shadow-sm backdrop-blur-md bg-zink-50 p-4">
+        <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-4xl rounded-xl overflow-hidden shadow-[4px_8px_20px_8px] backdrop-blur-md bg-white my-5 p-4">
+          <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-4xl rounded-xl overflow-hidden shadow-sm backdrop-blur-md bg-zinc-100 p-4">
             {/* Desktop Image */}
             <div className="hidden sm:block">
               <img
@@ -40,7 +40,7 @@ export default function ProjectSection() {
       </Link>
 
       {/* Project Description */}
-      <div className="w-full max-w-xl text-center sm:text-left sm:w-1/2 px-2 sm:px-4">
+      <div className="w-5/6 max-w-sm text-center sm:text-left sm:w-1/2 px-2 sm:px-4">
         <h1 className="font-bold text-sm sm:text-base lg:text-lg text-zinc-950 leading-relaxed">
           Meso
         </h1>
