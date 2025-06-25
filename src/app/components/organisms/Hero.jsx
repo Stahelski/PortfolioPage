@@ -11,11 +11,11 @@ export default function Hero() {
       <h1 className="absolute top-4 mx-auto sm:left-8 text-[#F5C19A] text-4xl z-5">
         FrontendForge
       </h1>
-      <div className="HeroMain relative h-3/4 w-3/4 z-[1] mt-12  bg-white/5 backdrop-blur-sm">
+      <div className="HeroMain relative h-3/4 w-3/4 z-[1] mt-12  bg-white/8 backdrop-blur-lg">
         <Navbar />
 
         <div className="flex justify-center items-start w-full h-full">
-          <div className="flex flex-col items-center text-xl sm:text-4xl md:text-5xl xl:text-6xl mt-5 sm:mt-21">
+          <div className="flex flex-col items-center text-xl sm:text-4xl d:text-m5xl xl:text-6xl mt-5 sm:mt-21">
             <h1 className="text-[#fff4ebba] mb-2">
               A strategic creative studio
             </h1>

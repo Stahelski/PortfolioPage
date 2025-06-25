@@ -14,7 +14,7 @@ export default function SilkWaveBackground() {
         <SilkPuls
           key={bgColor}
           color={bgColor}
-          speed={4.5}
+          speed={5.5}
           scale={1}
           noiseIntensity={1.2}
         />
