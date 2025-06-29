@@ -36,9 +36,7 @@ export default function AboutPage() {
               then I light up. Haha. Some of my interests include:
               communication,
             </p>
-            <p>
-              web development (obviously), psychology, architecture, exercise,
-            </p>
+            <p>web development (obviously), psychology, exercise,</p>
             <p>
               food and nutrition, design, and just learning in general. I’m not
               a pro in any of
@@ -60,6 +58,7 @@ export default function AboutPage() {
 
       {/* Divider */}
       <div className="h-px bg-black w-[80%] mx-auto my-6"></div>
+   
 
       {/* Mid Image Section */}
       <div className="w-full flex flex-wrap justify-center gap-4 px-6 py-10">
@@ -70,8 +69,6 @@ export default function AboutPage() {
           />
         ))}
       </div>
-
-  
 
       {/* Bottom Divider */}
       <div className="h-px bg-black w-full" />
