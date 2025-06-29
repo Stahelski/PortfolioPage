@@ -104,7 +104,7 @@ export default function NewAboutMePage() {
                   : "-translate-x-10 opacity-0"
               }`}
             >
-              <div className="relative group mb-85">
+              <div className="relative group lg:mb-85">
                 <div className="absolute -inset-4 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl blur opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                 <div className="relative">
                   <img
