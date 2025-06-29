@@ -50,22 +50,22 @@ export default function projectPage() {
         </div>
       </div>
 
-      <div className="projectPageContainer2 flex flex-col lg:flex-row items-center justify-between gap-10 mt10 w-screen px-6">
+      <div className="projectPageContainer2 flex flex-col lg:flex-row items-center justify-between gap-10 mt10 w-full px-6">
         <div className="ContainerGymApp2Images relative w-screen md:mb-15 md:mt-5 lg:w-2/3 h-[60dvh] sm:h-[70vh] md:h-[85vh]">
           <img
             src="/GymAppPage1.png"
             alt="gymImage1"
-            className="absolute top-10 right-4 sm:right-20 w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-10"
+            className="absolute top-10 right-4 sm:right-20 w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-10 hover:scale-105 transition-transform duration-300"
           ></img>
           <img
             src="/GymAppPage2.png"
             alt="gymImage2"
-            className="absolute top-[27%] right-[25%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-20"
+            className="absolute top-[27%] right-[25%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-20 hover:scale-105 transition-transform duration-300"
           ></img>
           <img
             src="/GymAppPage3.png"
             alt="gymImage3"
-            className="absolute top-[47%] right-[45%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-30"
+            className="absolute top-[47%] right-[45%] w-[40%] sm:w-[40%] rounded-sm shadow-xl shadow-gray-900 z-30 hover:scale-105 transition-transform duration-300"
           ></img>
         </div>
         <div className="ContainerGymApp2Text mb-15 mt-5 w-full lg:w-1/3 text-center lg:text-left">
