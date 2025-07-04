@@ -55,6 +55,20 @@ export default function ImageCarousel() {
     </div>
   );
 }
+
+    {/* Navigation Controls */}
+  //   <button
+  //   onClick={prevSlide}
+  //   className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 backdrop-blur-sm rounded-full p-3 hover:bg-white/20 transition-all duration-200 border border-white/20"
+  // >
+  //   <ChevronLeft className="w-6 h-6 text-white" />
+  // </button>
+  // <button
+  //   onClick={nextSlide}
+  //   className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 backdrop-blur-sm rounded-full p-3 hover:bg-white/20 transition-all duration-200 border border-white/20"
+  // >
+  //   <ChevronRight className="w-6 h-6 text-white" />
+  // </button>
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Ta inn og display 2 bilder
 // V - H Knapper som bytter til eller fra neste bildet - med animasjon

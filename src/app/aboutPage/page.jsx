@@ -22,7 +22,7 @@ export default function NewAboutMePage() {
     "Javascript",
     "Node.js",
     "Tailwind",
-    "Design",
+    "Figma",
   ];
 
   useEffect(() => {
@@ -212,7 +212,7 @@ export default function NewAboutMePage() {
                   <Github className="w-4 h-4 text-gray-600 group-hover:text-amber-700" />
                 </a>
                 <a
-                  href="#"
+                  href="/testPage"
                   className="w-10 h-10 bg-white/60 rounded-full flex items-center justify-center border border-amber-200 hover:bg-white/80 hover:border-blue-400 transition-colors group shadow-sm"
                 >
                   <Linkedin className="w-4 h-4 text-gray-600 group-hover:text-blue-600" />

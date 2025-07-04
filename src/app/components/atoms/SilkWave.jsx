@@ -1,5 +1,5 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { forwardRef, useRef, useMemo, useLayoutEffect} from "react";
+import { forwardRef, useRef, useMemo, useLayoutEffect } from "react";
 import { Color } from "three";
 
 const hexToNormalizedRGB = (hex) => {
