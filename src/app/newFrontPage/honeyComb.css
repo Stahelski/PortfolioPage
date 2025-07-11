@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+.row {
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+.row:nth-child(even) {
+  margin-left: 2px;
+}
+
+.row .box {
+  position: relative;
+  width: 100px;
+  height: 110px;
+  background: #0c0c0c;
+  margin: 2px;
+  transition: ease-out 1.45s;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.row .box:hover {
+  transition: ease-in 0.12s;
+  transform: scale(1.04);
+  background: #2c0247;
+}
