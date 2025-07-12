@@ -16,57 +16,144 @@ import {
 export default function NewHero() {
   return (
     <div className="NewHero flex justify-center items-center min-h-screen max-w-screen-lg mx-auto">
-      <div className="bg-purple-500 h-[75vh] w-[60vw] grid grid-cols-8 grid-rows-7 gap-3">
-        <div className="bg-purple-400 col-span-3 row-span-2 flex items-center pl-4">
+      
+      <div className="bg-transparent h-[75vh] w-[60vw] grid grid-cols-8 grid-rows-7 gap-3">
+        <div className="bg-[#1f1d22] text-stone-200 rounded-md col-span-3 row-span-2 flex items-center pl-4">
           I'm Stian, a front-end developer located in Norway.
         </div>
 
-        <div className="bg-purple-300 row-start-3 col-span-3 row-span-4 grid grid-cols-4 grid-rows-8 gap-0">
-          <div className="bg-zinc-400 col-span-4 flex items-center l-4">
+        <div className="bg-[#1f1d22] rounded-md row-start-3 col-span-3 row-span-4 grid grid-cols-4 grid-rows-8 gap-0">
+          <div className="bg-[#1f1d22] text-stone-200 rounded-md col-span-4 flex items-center pl-4">
             Tech stack
           </div>
-          <div className="bg-zinc-600 row-span-2"></div>
-          <div className="bg-zinc-700 row-span-2"></div>
-          <div className="bg-zinc-800 row-span-2"></div>
-          <div className="bg-zinc-600 row-span-2"></div>
-          <div className="bg-zinc-700 row-span-2"></div>
-          <div className="bg-zinc-800 row-span-2"></div>
-          <div className="bg-zinc-600 row-span-2"></div>
-          <div className="bg-zinc-700 row-span-2"></div>
-          <div className="bg-zinc-800 row-span-2"></div>
-          <div className="bg-zinc-600 row-span-2"></div>
-          <div className="bg-zinc-700 row-span-2"></div>
-          <div className="bg-zinc-800 row-span-2"></div>
-          <div className="bg-zinc-400 row-start-8 col-span-4"></div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img
+              src="/react-original.svg"
+              className="h-13"
+              alt="React logo"
+            ></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img
+              src="/nextjs-original.svg"
+              className="h-12"
+              alt="Next.js logo"
+            ></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img
+              src="/javascript-original (1).svg"
+              className="h-12"
+              alt="Javascript logo"
+            ></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img
+              src="/nodejs-original-wordmark.svg"
+              className="h-12"
+              alt="Node.js logo"
+            ></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img
+              src="/html5-original.svg"
+              className="h-12"
+              alt="HTML logo"
+            ></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img src="/css3-original.svg" className="h-12" alt="CSS logo"></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img src="/git-original.svg" className="h-12" alt="Git logo"></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img src="/Github.svg" className="h-12" alt="Github logo"></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img
+              src="/tailwindcss-original.svg"
+              className="h-12"
+              alt="Tailwindcss logo"
+            ></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img
+              src="/figma-original.svg"
+              className="h-12"
+              alt="Figma logo"
+            ></img>
+          </div>
+          <div className="row-span-2 flex justify-center items-center">
+            <img
+              src="/sqlite-original.svg"
+              className="h-12"
+              alt="SQLite logo"
+            ></img>
+          </div>
+
+          <div className="bg-[#1f1d22] rounded-md row-start-8 col-span-4"></div>
         </div>
 
-        <div className="bg-purple-700 row-start-7 col-span-3 flex items-center pl-4">
+        <div className="bg-[#1f1d22] text-stone-200 rounded-md row-start-7 col-span-3 flex items-center pl-4">
           Stiankarlsen709@gmail.com
         </div>
-        <div className="bg-purple-900 ml-2 col-span-5 col-start-4 row-span-7 grid grid-cols-10 grid-rows-10">
-          <div className="bg-blue-600 col-span-10"></div>
-          <div className="bg-blue-700 row-start-2 col-start-2 col-end-5"></div>
-          <div className="bg-blue-800 row-start-3 col-start-2 col-end-10"></div>
-          <div className="bg-blue-900 row-start-4 row-end-8 col-start-2 col-end-6"></div>
-          <div className="bg-blue-900 row-start-9 col-start-2 col-end-7 flex items-center">
-            Gym
+        <div className="containerRight bg-[#1f1d22] rounded-md ml-2 col-span-5 col-start-4 row-span-7 grid grid-cols-10 grid-rows-10">
+          <div className="col-span-10"></div>
+          <div className="Contact bg-[#510fa5] text-stone-200 my-2 row-start-2 col-start-2 col-end-4 rounded-md flex justify-center items-center">
+            Contact
+          </div>
+          <div className="WhiteLine row-start-3 col-start-2 col-end-10 flex items-center">
+            <div className="bg-stone-200 h-[2px] w-full"></div>
+          </div>
+          <div className="Image row-start-4 row-end-8 col-start-2 col-end-6 flex justify-center items-center">
+            <img
+              src="/ImgMe.jpg"
+              className="w-full rounded-md"
+              alt="Image of me"
+            ></img>
           </div>
 
-          <div className="bg-blue-700 row-start-2 col-start-8 col-end-10"></div>
+          <div className="SosialIcons  bg-[#1f1d22] row-start-2 col-start-8 col-end-10 flex justify-around items-center">
+            <div className="h-6 w-6 bg-[#510fa5] rounded-4xl flex justify-center items-center">
+              <img
+                src="/linkedin-brands-solid.svg"
+                className="h-4"
+                alt="Linkedin logo"
+              ></img>
+            </div>
+            <div className="h-6 w-6 bg-[#510fa5] rounded-4xl flex justify-center items-center">
+              <img src="/Github.svg" className="h-4" alt="Github logo"></img>
+            </div>
+          </div>
 
-          <div className="bg-blue-900 row-start-4 col-start-6 col-end-10 ml-2 pr-2 flex justify-end items-center">
+          <div className="Projects bg-[#100f14] text-stone-200 rounded-md row-start-4 col-start-6 col-end-10 ml-2 pr-2 flex justify-end items-center">
             Projects
           </div>
-          <div className="bg-blue-500 row-start-5 row-span-2 col-start-6 col-end-10 ml-2 flex items-center">
-            <div className="bg-amber-50 w-full h-[50%] flex items-center pl-2">
+          <div className="About bg-[#1f1d22] row-start-5 row-span-2 col-start-6 col-end-10 ml-2 flex items-center">
+            <div className="bg-[#100f14] text-stone-200 rounded-md w-full h-[50%] flex items-center pl-2">
               About
             </div>
           </div>
-          <div className="bg-blue-600 row-start-7 col-start-6 col-end-10 ml-2 pr-2 flex justify-end items-center">
+          <div className="TickTackToe bg-[#100f14] text-stone-200 rounded-md row-start-7 col-start-6 col-end-10 ml-2 pr-2 flex justify-end items-center">
             Tick Tack Toe
           </div>
 
-          <div className="bg-blue-500 row-start-10 col-span-10"></div>
+          <div className=" row-start-9 col-start-2 col-end-7"></div>
+
+          <div className="GymFoodCode bg-[#1f1d22] text-stone-200 row-start-10 col-start-2 col-end-7 flex justify-between items-center">
+            <div className=" w-15 h-10 flex items-center justify-center">
+              Gym
+              <img src="/GymHeart.png" className="h-5 pl-1" alt="Heart"></img>
+            </div>
+            <div className=" w-15 h-10 flex items-center justify-center">
+              Food
+              <img src="/FoodHeart.png" className="h-5 pl-1" alt="Heart"></img>
+            </div>
+            <div className=" w-15 h-10 flex items-center justify-center">
+              Code <img src="/Heart.png" className="h-5 pl-1" alt="Heart"></img>
+            </div>
+          </div>
         </div>
       </div>
     </div>
