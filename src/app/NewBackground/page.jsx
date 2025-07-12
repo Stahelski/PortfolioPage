@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import honeyComb from "./honeyComb.css";
 
@@ -20,7 +18,7 @@ export default function honeyCombBackground() {
     );
   }
 
-  return <div className="container">{rows}</div>;
+  return <div className="container z-[0]">{rows}</div>;
 }
 
 // Psudo
