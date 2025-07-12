@@ -45,23 +45,27 @@ export default function NewHero() {
         </div>
         <div className="bg-purple-900 ml-2 col-span-5 col-start-4 row-span-7 grid grid-cols-10 grid-rows-10">
           <div className="bg-blue-600 col-span-10"></div>
-          <div className="bg-blue-700 row-start-2 col-start-2"></div>
+          <div className="bg-blue-700 row-start-2 col-start-2 col-end-5"></div>
           <div className="bg-blue-800 row-start-3 col-start-2 col-end-10"></div>
-          <div className="bg-blue-900 row-start-4 col-start-2"></div>
-          <div className="bg-blue-500 row-start-5 col-start-2"></div>
-          <div className="bg-blue-600 row-start-6 col-start-2"></div>
-          <div className="bg-blue-700 row-start-7 col-start-2"></div>
-          <div className="bg-blue-800 row-start-8 col-start-2"></div>
+          <div className="bg-blue-900 row-start-4 row-end-8 col-start-2 col-end-6"></div>
           <div className="bg-blue-900 row-start-9 col-start-2 col-end-7 flex items-center">
             Gym
           </div>
 
-          <div className="bg-blue-700 row-start-2 col-start-9"></div>
-          <div className="bg-blue-900 row-start-4 col-start-9"></div>
-          <div className="bg-blue-500 row-start-5 col-start-9"></div>
-          <div className="bg-blue-600 row-start-6 col-start-9"></div>
-          <div className="bg-blue-700 row-start-7 col-start-9"></div>
-          <div className="bg-blue-800 row-start-8 col-start-9"></div>
+          <div className="bg-blue-700 row-start-2 col-start-8 col-end-10"></div>
+
+          <div className="bg-blue-900 row-start-4 col-start-6 col-end-10 ml-2 pr-2 flex justify-end items-center">
+            Projects
+          </div>
+          <div className="bg-blue-500 row-start-5 row-span-2 col-start-6 col-end-10 ml-2 flex items-center">
+            <div className="bg-amber-50 w-full h-[50%] flex items-center pl-2">
+              About
+            </div>
+          </div>
+          <div className="bg-blue-600 row-start-7 col-start-6 col-end-10 ml-2 pr-2 flex justify-end items-center">
+            Tick Tack Toe
+          </div>
+
           <div className="bg-blue-500 row-start-10 col-span-10"></div>
         </div>
       </div>
