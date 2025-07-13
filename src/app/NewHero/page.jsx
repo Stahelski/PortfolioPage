@@ -100,7 +100,7 @@ export default function NewHero() {
         <div className="bg-[#1f1d22] text-stone-200 rounded-md row-start-14 row-end-16 col-span-3 flex items-center pl-2">
           Stiankarlsen709@gmail.com
         </div>
-        <div className="containerRight bg-[#1f1d22] rounded-md ml-2 col-span-5 col-start-4 row-span-7 grid grid-cols-10 grid-rows-10">
+        <div className="containerRight bg-[#1f1d22] rounded-md ml-2 col-span-5 col-start-4 row-span-15 grid grid-cols-10 grid-rows-10">
           <div className="col-span-10"></div>
           <div className="Contact bg-[#510fa5] text-stone-200 my-2 row-start-2 col-start-2 col-end-4 rounded-md flex justify-center items-center">
             Contact
