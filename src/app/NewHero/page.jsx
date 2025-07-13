@@ -97,7 +97,7 @@ export default function NewHero() {
           </div>
         </div>
 
-        <div className="bg-[#1f1d22] text-stone-200 rounded-md row-start-14 row-end-16 col-span-3 flex items-center pl-2">
+        <div className="Email bg-[#1f1d22] text-stone-200 rounded-md row-start-14 row-end-16 col-span-3 flex items-center pl-2">
           Stiankarlsen709@gmail.com
         </div>
         <div className="containerRight bg-[#1f1d22] rounded-md ml-2 col-span-5 col-start-4 row-span-15 grid grid-cols-10 grid-rows-10">
@@ -143,16 +143,16 @@ export default function NewHero() {
 
           <div className=" row-start-9 col-start-2 col-end-7"></div>
 
-          <div className="GymFoodCode bg-[#1f1d22] text-stone-200 row-start-10 col-start-2 col-end-7 flex justify-between items-center">
+          <div className="GymFoodCode bg-[#1f1d22] text-stone-200 pb-1 row-start-10 col-start-2 col-end-7 flex justify-between items-center">
             <div className=" w-15 h-10 flex items-center justify-center">
               Gym
               <img src="/GymHeart.png" className="h-5 pl-1" alt="Heart"></img>
             </div>
-            <div className=" w-15 h-10 flex items-center justify-center">
+            <div className=" w-15 h-10 pl-6 flex items-center justify-center">
               Food
               <img src="/FoodHeart.png" className="h-5 pl-1" alt="Heart"></img>
             </div>
-            <div className=" w-15 h-10 flex items-center justify-center">
+            <div className=" w-15 h-10 pl-10 flex items-center justify-center">
               Code <img src="/Heart.png" className="h-5 pl-1" alt="Heart"></img>
             </div>
           </div>
