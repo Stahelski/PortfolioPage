@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import HoneyComb from "../components/atoms/HexBackground";
 import {
   ArrowRight,
   Github,
@@ -15,87 +16,88 @@ import {
 
 export default function NewHero() {
   return (
-    <div className="NewHero flex justify-center items-center min-h-screen max-w-screen-lg mx-auto">
-      
-      <div className="bg-transparent h-[75vh] w-[60vw] grid grid-cols-8 grid-rows-7 gap-3">
-        <div className="bg-[#1f1d22] text-stone-200 rounded-md col-span-3 row-span-2 flex items-center pl-4">
-          I'm Stian, a front-end developer located in Norway.
+    <div className="NewHero relative flex justify-center items-center min-h-screen max-w-screen-lg mx-auto">
+      <div className="Background absolute left-[-100px] inset-0 z-[0]">
+        <HoneyComb />
+      </div>
+
+      <div className="Elements bg-transparent z-[1] h-[65vh] w-[52vw] grid grid-cols-8 grid-rows-16 gap-3">
+        <div className="AboutText bg-[#1f1d22] text-stone-200 rounded-md col-span-3 row-span-4 flex items-center pl-4">
+          I'm Stian, a front-end web developer located in Norway.
         </div>
 
-        <div className="bg-[#1f1d22] rounded-md row-start-3 col-span-3 row-span-4 grid grid-cols-4 grid-rows-8 gap-0">
-          <div className="bg-[#1f1d22] text-stone-200 rounded-md col-span-4 flex items-center pl-4">
+        <div className="TechStack bg-[#1f1d22] rounded-md px-1 row-start-5 col-span-3 row-span-9 grid grid-cols-4 grid-rows-7 gap-0">
+          <div className="bg-[#1f1d22] text-stone-200 rounded-md col-span-4 flex items-center pl-2 pt-2">
             Tech stack
           </div>
           <div className="row-span-2 flex justify-center items-center">
             <img
               src="/react-original.svg"
-              className="h-13"
+              className="h-11"
               alt="React logo"
             ></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
             <img
               src="/nextjs-original.svg"
-              className="h-12"
+              className="h-11"
               alt="Next.js logo"
             ></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
             <img
               src="/javascript-original (1).svg"
-              className="h-12"
+              className="h-11"
               alt="Javascript logo"
             ></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
             <img
               src="/nodejs-original-wordmark.svg"
-              className="h-12"
+              className="h-11"
               alt="Node.js logo"
             ></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
             <img
               src="/html5-original.svg"
-              className="h-12"
+              className="h-11"
               alt="HTML logo"
             ></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
-            <img src="/css3-original.svg" className="h-12" alt="CSS logo"></img>
+            <img src="/css3-original.svg" className="h-11" alt="CSS logo"></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
-            <img src="/git-original.svg" className="h-12" alt="Git logo"></img>
+            <img src="/git-original.svg" className="h-11" alt="Git logo"></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
-            <img src="/Github.svg" className="h-12" alt="Github logo"></img>
+            <img src="/Github.svg" className="h-11" alt="Github logo"></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
             <img
               src="/tailwindcss-original.svg"
-              className="h-12"
+              className="h-11"
               alt="Tailwindcss logo"
             ></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
             <img
               src="/figma-original.svg"
-              className="h-12"
+              className="h-11"
               alt="Figma logo"
             ></img>
           </div>
           <div className="row-span-2 flex justify-center items-center">
             <img
               src="/sqlite-original.svg"
-              className="h-12"
+              className="h-11"
               alt="SQLite logo"
             ></img>
           </div>
-
-          <div className="bg-[#1f1d22] rounded-md row-start-8 col-span-4"></div>
         </div>
 
-        <div className="bg-[#1f1d22] text-stone-200 rounded-md row-start-7 col-span-3 flex items-center pl-4">
+        <div className="bg-[#1f1d22] text-stone-200 rounded-md row-start-14 row-end-16 col-span-3 flex items-center pl-2">
           Stiankarlsen709@gmail.com
         </div>
         <div className="containerRight bg-[#1f1d22] rounded-md ml-2 col-span-5 col-start-4 row-span-7 grid grid-cols-10 grid-rows-10">

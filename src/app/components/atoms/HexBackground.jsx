@@ -18,5 +18,5 @@ export default function honeyCombBackground() {
     );
   }
 
-  return <div className="container z-[0]">{rows}</div>;
+  return <div className="container">{rows}</div>;
 }
