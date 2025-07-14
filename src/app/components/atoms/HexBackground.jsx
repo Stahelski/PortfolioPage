@@ -7,7 +7,7 @@ export default function honeyCombBackground() {
   for (let i = 0; i < 21; i++) {
     const boxes = [];
 
-    for (let j = 0; j < 29; j++) {
+    for (let j = 0; j < 99; j++) {
       boxes.push(<div key={j} className="box"></div>);
     }
 
