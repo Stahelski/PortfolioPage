@@ -219,7 +219,7 @@ export default function NewAboutMePage() {
                   <Linkedin className="w-4 h-4 text-gray-600 group-hover:text-blue-600" />
                 </a>
                 <a
-                  href="#"
+                  href="/TickTackToe"
                   className="w-10 h-10 bg-white/60 rounded-full flex items-center justify-center border border-amber-200 hover:bg-white/80 hover:border-yellow-400 transition-colors group shadow-sm"
                 >
                   <Mail className="w-4 h-4 text-gray-600 group-hover:text-yellow-600" />
