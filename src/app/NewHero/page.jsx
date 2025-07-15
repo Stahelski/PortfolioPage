@@ -41,6 +41,13 @@ export default function NewHero() {
         {/* About Text */}
         <div className="col-span-3 row-span-4 bg-[#1f1d22] text-stone-200 rounded-md flex items-center pl-4">
           I'm Stian, a front-end web developer located in Norway.
+          <div className="h-5 w-11 mt-4 mr-2 rounded-full bg-blue-700">
+            <img
+              src="/chevron_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+              alt="next button"
+              className="ml-0.5"
+            ></img>
+          </div>
         </div>
 
         {/* Tech Stack */}
@@ -64,12 +71,12 @@ export default function NewHero() {
         </div>
 
         {/* Right Side Content */}
-        <div className="col-span-5 col-start-4 row-span-15 ml-2 bg-[#1f1d22] rounded-md grid grid-cols-10 grid-rows-10">
+        <div className="col-span-5 col-start-4 row-span-15 bg-[#1f1d22] rounded-md grid grid-cols-10 grid-rows-10">
           {/* Spacer */}
           <div className="col-span-10" />
 
           {/* Contact */}
-          <div className="row-start-2 col-start-2 col-end-4 bg-[#510fa5] text-stone-200 rounded-md flex justify-center items-center my-2">
+          <div className="row-start-2 col-start-2 col-end-4 bg-blue-700 text-stone-200 rounded-md flex justify-center items-center my-2">
             Contact
           </div>
 
@@ -92,7 +99,7 @@ export default function NewHero() {
             {socialIcons.map((icon, index) => (
               <div
                 key={index}
-                className="h-6 w-6 bg-[#510fa5] rounded-full flex justify-center items-center"
+                className="h-6 w-6 bg-blue-700 rounded-full flex justify-center items-center"
               >
                 <img src={icon.src} alt={`${icon.alt} logo`} className="h-4" />
               </div>
