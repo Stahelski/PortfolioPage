@@ -1,9 +1,20 @@
 "use client";
 
 import React from "react";
+import { Toaster, toast } from "react-hot-toast";
 import HoneyComb from "../components/atoms/HexBackground";
 
 export default function NewHero() {
+  const kopier = async () => {
+    try {
+      await navigator.clipboard.writeText("Stiankarlsen709@gmail.com");
+      toast.success("Email copied");
+    } catch (err) {
+      console.log(err.message);
+      toast.error("Failed to copy email");
+    }
+  };
+
   const techStack = [
     { src: "/react-original.svg", alt: "React" },
     { src: "/nextjs-original.svg", alt: "Next.js" },
@@ -37,17 +48,10 @@ export default function NewHero() {
       </div>
 
       {/* Main Content Grid */}
-      <div className="z-10 h-[65vh] w-[52vw] grid grid-cols-8 grid-rows-16 gap-3">
+      <div className="z-10 h-[65vh] w-[52vw] grid grid-cols-7 grid-rows-16 gap-3">
         {/* About Text */}
-        <div className="col-span-3 row-span-4 bg-[#1f1d22] text-stone-200 rounded-md flex items-center pl-4">
+        <div className="col-span-3 row-span-4 bg-[#1f1d22] text-stone-200 rounded-md flex items-center pr-2 pl-4">
           I'm Stian, a front-end web developer located in Norway.
-          <div className="h-5 w-11 mt-4 mr-2 rounded-full bg-blue-700">
-            <img
-              src="/chevron_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
-              alt="next button"
-              className="ml-0.5"
-            ></img>
-          </div>
         </div>
 
         {/* Tech Stack */}
@@ -58,7 +62,7 @@ export default function NewHero() {
           {techStack.map((tech, index) => (
             <div
               key={index}
-              className="row-span-2 flex justify-center items-center"
+              className="row-span-2 flex justify-center items-center transform hover:scale-112 transition-transform duration-75"
             >
               <img src={tech.src} alt={`${tech.alt} logo`} className="h-11" />
             </div>
@@ -66,19 +70,30 @@ export default function NewHero() {
         </div>
 
         {/* Email */}
-        <div className="col-span-3 row-start-14 row-end-16 bg-[#1f1d22] text-stone-200 rounded-md flex items-center pl-2">
+        <div className="relative col-span-3 row-start-14 row-end-16 justify-center bg-[#1f1d22] text-stone-200 rounded-md flex items-center pr-4">
           Stiankarlsen709@gmail.com
+          <button
+            className="absolute right-0 cursor-pointer transform hover:scale-112 transition-transform duration-75"
+            onClick={kopier}
+          >
+            <img
+              src="/copy_all_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+              alt="copy image"
+              className="right-0 pr-1 h-4"
+            ></img>
+          </button>
         </div>
+        <Toaster position="top-right" />
 
         {/* Right Side Content */}
-        <div className="col-span-5 col-start-4 row-span-15 bg-[#1f1d22] rounded-md grid grid-cols-10 grid-rows-10">
+        <div className="col-span-6 col-start-4 row-span-15 bg-[#1f1d22] rounded-md grid grid-cols-10 grid-rows-10">
           {/* Spacer */}
           <div className="col-span-10" />
 
           {/* Contact */}
-          <div className="row-start-2 col-start-2 col-end-4 bg-blue-700 text-stone-200 rounded-md flex justify-center items-center my-2">
+          {/* <div className="row-start-2 col-start-2 col-end-4 bg-blue-700 text-stone-200 rounded-md flex justify-center items-center my-2">
             Contact
-          </div>
+          </div> */}
 
           {/* Line Divider */}
           <div className="row-start-3 col-start-2 col-end-10 flex items-center">
@@ -86,11 +101,17 @@ export default function NewHero() {
           </div>
 
           {/* Image */}
-          <div className="row-start-4 row-end-8 col-start-2 col-end-6 flex justify-center items-center">
+          <div className="relative row-start-4 row-end-8 col-start-2 col-end-6 flex justify-center items-center group">
             <img
               src="/ImgMe.jpg"
               alt="Image of me"
-              className="w-full rounded-md"
+              className="w-full rounded-md transition-opacity duration-125 opacity-100 group-hover:opacity-100 absolute"
+            />
+            {/*Image Hover*/}
+            <img
+              src="/ImgMeHover.jpg"
+              alt="Image of me"
+              className="w-full rounded-md transition-opacity duration-125 opacity-0 group-hover:opacity-100 absolute"
             />
           </div>
 
@@ -131,7 +152,7 @@ export default function NewHero() {
             {lifestyle.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center lg:space-x-0 xl:space-x-2"
+                className="flex items-center justify-center lg:space-x-0 xl:space-x-2 "
               >
                 <span>{item.label}</span>
                 <img src={item.icon} alt="Heart" className="lg:h-4 xl:h-5" />
