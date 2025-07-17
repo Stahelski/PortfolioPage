@@ -29,11 +29,6 @@ export default function NewHero() {
     { src: "/sqlite-original.svg", alt: "SQLite" },
   ];
 
-  const socialIcons = [
-    { src: "/linkedin-brands-solid.svg", alt: "LinkedIn" },
-    { src: "/Github.svg", alt: "GitHub" },
-  ];
-
   const lifestyle = [
     { label: "Gym", icon: "/GymHeart.png" },
     { label: "Food", icon: "/FoodHeart.png" },
@@ -115,16 +110,27 @@ export default function NewHero() {
             />
           </div>
 
-          {/* Social Icons */}
           <div className="row-start-2 col-start-8 col-end-10 flex justify-around items-center bg-[#1f1d22]">
-            {socialIcons.map((icon, index) => (
-              <div
-                key={index}
-                className="h-6 w-6 bg-blue-700 rounded-full flex justify-center items-center"
-              >
-                <img src={icon.src} alt={`${icon.alt} logo`} className="h-4" />
-              </div>
-            ))}
+            <p
+              className=" cursor-pointer h-6 w-6 bg-blue-700 rounded-full flex justify-center items-center transfor hover:scale-112 transition-transform duration-75"
+              href="https://github.com/Stahelski"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/Github.svg" alt="github logo" className="h-4.5"></img>
+            </p>
+            {/* <p
+              className="cursor-pointer h-6 w-6 bg-blue-700 rounded-full flex justify-center items-center"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/linkedin-brands-solid.svg"
+                alt="linkedIn logo"
+                className="h-4.5"
+              ></img>
+            </p> */}
           </div>
 
           {/* Projects */}
