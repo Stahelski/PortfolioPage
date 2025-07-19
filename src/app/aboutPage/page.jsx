@@ -109,7 +109,7 @@ export default function NewAboutMePage() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl blur opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                 <div className="relative">
                   <img
-                    src="/MEEEEEE2 – Kopi.png"
+                    src="/ImgMeHover.jpg"
                     alt="Profile"
                     className="w-full h-[500px] object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                   />

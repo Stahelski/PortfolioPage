@@ -112,7 +112,7 @@ export default function NewHero() {
 
           <div className="row-start-2 col-start-8 col-end-10 flex justify-around items-center bg-[#1f1d22]">
             <p
-              className=" cursor-pointer h-6 w-6 bg-blue-700 rounded-full flex justify-center items-center transfor hover:scale-112 transition-transform duration-75"
+              className=" cursor-pointer h-6 w-6 bg-sky-800 rounded-full flex justify-center items-center transfor hover:scale-112 transition-transform duration-75"
               href="https://github.com/Stahelski"
               target="_blank"
               rel="noopener noreferrer"
@@ -120,8 +120,8 @@ export default function NewHero() {
               <img src="/Github.svg" alt="github logo" className="h-4.5"></img>
             </p>
             <p
-              className="cursor-pointer h-6 w-6 bg-blue-700 rounded-full flex justify-center items-center"
-              href=""
+              className="cursor-pointer h-6 w-6 bg-sky-800 rounded-full flex justify-center items-center transfor hover:scale-112 transition-transform duration-75"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
             >
