@@ -35,20 +35,7 @@ export default function NewAboutMePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50 to-stone-100 text-gray-800 overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-amber-50 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
-        <div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-amber-50 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"
-          style={{ animationDelay: "2s" }}
-        ></div>
-        <div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-slate-50 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-pulse"
-          style={{ animationDelay: "4s" }}
-        ></div>
-      </div>
-
+    <div className="min-h-screen bg-gradient-to-br from-[#06000f] to-sky-950 text-stone-300 overflow-hidden">
       <div className="relative z-10 container mx-auto px-6 py-12">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -59,28 +46,22 @@ export default function NewAboutMePage() {
                 : "translate-y-10 opacity-0"
             }`}
           >
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-gray-800 via-amber-950 to-yellow-600 bg-clip-text text-transparent mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold bg-stone-300 bg-clip-text text-transparent mb-1">
               About Me
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-yellow-600 mx-auto rounded-full mb-8"></div>
+            <div className="w-121 h-0.5 bg-gradient-to-r from-stone-300 to-stone-400 mx-auto rounded-full mb-6"></div>
 
             {/* Navigation */}
             <nav className="flex justify-center space-x-8 text-lg font-medium">
               <a
-                href="/aboutPage"
-                className="text-amber-700 hover:text-amber-900 transition-colors duration-200 pb-2 border-b-2 border-amber-500"
-              >
-                About
-              </a>
-              <a
                 href="/"
-                className="text-gray-600 hover:text-amber-700 transition-colors duration-200 pb-2 border-b-2 border-transparent hover:border-amber-300"
+                className="w-21 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
               >
                 Home
               </a>
               <a
                 href="/contactPage"
-                className="text-gray-600 hover:text-amber-700 transition-colors duration-200 pb-2 border-b-2 border-transparent hover:border-amber-300"
+                className="w-21 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
               >
                 Contact
               </a>
@@ -88,7 +69,7 @@ export default function NewAboutMePage() {
                 href="https://github.com/Stahelski"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-amber-700 transition-colors duration-200 pb-2 border-b-2 border-transparent hover:border-amber-300"
+                className="w-21 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
               >
                 GitHub
               </a>
@@ -106,14 +87,14 @@ export default function NewAboutMePage() {
               }`}
             >
               <div className="relative group lg:mb-85">
-                <div className="absolute -inset-4 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl blur opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                <div className="absolute -inset-4 rounded-2xl blur opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                 <div className="relative">
                   <img
-                    src="/ImgMeHover.jpg"
+                    src="/ImgMe.jpg"
                     alt="Profile"
                     className="w-full h-[500px] object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-200/20 via-transparent to-transparent rounded-2xl hover:scale-105 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent rounded-2xl hover:scale-105 transition-transform duration-500"></div>
                 </div>
               </div>
             </div>
@@ -130,21 +111,21 @@ export default function NewAboutMePage() {
               <div className="space-y-4">
                 <h2 className="text-4xl md:text-5xl font-bold">
                   Hi, I'm{" "}
-                  <span className="bg-gradient-to-r from-gray-950 to-gray-800 bg-clip-text text-transparent">
+                  <span className="bg-stone-300 bg-clip-text text-transparent">
                     Stian Karlsen
                   </span>
                 </h2>
-                <div className="flex items-center space-x-2 text-xl text-amber-900">
+                <div className="flex items-center space-x-2 text-xl text-sky-300">
                   <Code className="w-5 h-5" />
                   <span>I build with</span>
-                  <span className="font-semibold text-gray-800 min-w-[100px] text-left">
+                  <span className="font-semibold text-sky-400 min-w-[100px] text-left">
                     {skills[currentSkill]}
                   </span>
                 </div>
               </div>
 
               {/* Bio */}
-              <div className="space-y-6 text-gray-700 leading-relaxed">
+              <div className="space-y-6 text-stone-300 leading-relaxed">
                 <p className="text-md">
                   I'm a web developer, and I love what I do! Hello and welcome
                   to my about page. I consider myself a bit of a Swiss Army
@@ -161,13 +142,13 @@ export default function NewAboutMePage() {
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 py-6">
-                <div className="text-center p-4 bg-white/70 rounded-xl border border-amber-200 backdrop-blur-sm hover:bg-white/80 hover:border-amber-300 transition-all shadow-lg">
-                  <div className="text-2xl font-bold text-amber-800">25+</div>
-                  <div className="text-sm text-gray-600">Projects</div>
+                <div className="text-center p-4 bg-[#332f3a] rounded-xl border border-sky-300 backdrop-blur-sm hover:bg-[#393541] hover:border-sky-400 transition-all shadow-lg">
+                  <div className="text-2xl font-bold text-sky-400">25+</div>
+                  <div className="text-sm text-stone-300">Projects</div>
                 </div>
-                <div className="text-center p-4 bg-white/70 rounded-xl border border-amber-200 backdrop-blur-sm hover:bg-white/80 hover:border-amber-300 transition-all shadow-lg">
-                  <div className="text-2xl font-bold text-yellow-700">1</div>
-                  <div className="text-sm text-gray-600">Years Exp</div>
+                <div className="text-center p-4 bg-[#332f3a] rounded-xl border border-sky-300 backdrop-blur-sm hover:bg-[#393541] hover:border-sky-400 transition-all shadow-lg">
+                  <div className="text-2xl font-bold text-sky-400">1</div>
+                  <div className="text-sm text-stone-300">Years Exp</div>
                 </div>
                 {/* <div className="text-center p-4 bg-white/70 rounded-xl border border-amber-200 backdrop-blur-sm hover:bg-white/80 hover:border-amber-300 transition-all shadow-lg">
                   <div className="text-2xl font-bold text-amber-600">?+</div>
@@ -177,29 +158,28 @@ export default function NewAboutMePage() {
 
               {/* Location & Interests */}
               <div className="flex flex-wrap gap-4 text-sm">
-                <div className="flex items-center space-x-2 bg-white/60 px-3 py-2 rounded-full border border-amber-200 shadow-sm">
-                  <MapPin className="w-4 h-4 text-amber-600" />
-                  <span className="text-gray-700">Norway</span>
+                <div className="flex items-center space-x-2 bg-[#332f3a] px-3 py-2 rounded-full border border-sky-300 shadow-sm">
+                  <MapPin className="w-4 h-4 text-sky-400" />
+                  <span className="text-stone-300">Norway</span>
                 </div>
-                <div className="flex items-center space-x-2 bg-white/60 px-3 py-2 rounded-full border border-amber-200 shadow-sm">
-                  <Coffee className="w-4 h-4 text-yellow-600" />
-                  <span className="text-gray-700">Food Enthusiast</span>
+                <div className="flex items-center space-x-2 bg-[#332f3a] px-3 py-2 rounded-full border border-sky-300 shadow-sm">
+                  <Coffee className="w-4 h-4 text-sky-400" />
+                  <span className="text-stone-300">Food Enthusiast</span>
                 </div>
-                <div className="flex items-center space-x-2 bg-white/60 px-3 py-2 rounded-full border border-amber-200 shadow-sm">
-                  <Heart className="w-4 h-4 text-red-500" />
-                  <span className="text-gray-700">Gym</span>
+                <div className="flex items-center space-x-2 bg-[#332f3a] px-3 py-2 rounded-full border border-sky-300 shadow-sm">
+                  <Heart className="w-4 h-4 text-sky-400" />
+                  <span className="text-stone-300">Gym</span>
                 </div>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 pt-6">
-                <button className="group flex items-center space-x-2 bg-gradient-to-r from-amber-600 to-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:from-amber-700 hover:to-yellow-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-                  <Mail className="w-4 h-4" />
+                <button className="group flex items-center space-x-2 bg-gradient-to-r from-sky-700 to-sky-500 text-stone-300 px-6 py-3 rounded-full font-semibold hover:from-sky-600 hover:to-sky-400 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
+                  <Mail className="w-4 h-4 text-sky-300" />
                   <span>Get In Touch</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
-                <button className="flex items-center space-x-2 border border-amber-300 px-6 py-3 rounded-full font-semibold text-gray-700 hover:bg-amber-50 hover:border-amber-400 transition-colors shadow-sm">
-                  <Github className="w-4 h-4" />
+                <button className="flex items-center space-x-2 border border-sky-300 px-6 py-3 rounded-full font-semibold text-stone-300 hover:bg-sky-950 hover:border-sky-400 transition-colors shadow-sm">
+                  <Github className="w-4 h-4 text-[#b845f2]" />
                   <span>View Work</span>
                 </button>
               </div>
@@ -208,21 +188,21 @@ export default function NewAboutMePage() {
               <div className="flex space-x-4 pt-4">
                 <a
                   href="#"
-                  className="w-10 h-10 bg-white/60 rounded-full flex items-center justify-center border border-amber-200 hover:bg-white/80 hover:border-amber-400 transition-colors group shadow-sm"
+                  className="w-10 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
                 >
-                  <Github className="w-4 h-4 text-gray-600 group-hover:text-amber-700" />
+                  <Github className="w-4 h-4 text-stone-300 group-hover:text-[#b845f2]" />
                 </a>
                 <a
                   href="/NewHero"
-                  className="w-10 h-10 bg-white/60 rounded-full flex items-center justify-center border border-amber-200 hover:bg-white/80 hover:border-blue-400 transition-colors group shadow-sm"
+                  className="w-10 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
                 >
-                  <Linkedin className="w-4 h-4 text-gray-600 group-hover:text-blue-600" />
+                  <Linkedin className="w-4 h-4 text-stone-300 group-hover:text-[#0a66c2]" />
                 </a>
                 <a
                   href="/TickTackToe"
-                  className="w-10 h-10 bg-white/60 rounded-full flex items-center justify-center border border-amber-200 hover:bg-white/80 hover:border-yellow-400 transition-colors group shadow-sm"
+                  className="w-10 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
                 >
-                  <Mail className="w-4 h-4 text-gray-600 group-hover:text-yellow-600" />
+                  <Mail className="w-4 h-4 text-stone-300 group-hover:text-sky-300" />
                 </a>
               </div>
             </div>
