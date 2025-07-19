@@ -119,7 +119,7 @@ export default function NewHero() {
             >
               <img src="/Github.svg" alt="github logo" className="h-4.5"></img>
             </p>
-            {/* <p
+            <p
               className="cursor-pointer h-6 w-6 bg-blue-700 rounded-full flex justify-center items-center"
               href=""
               target="_blank"
@@ -130,23 +130,29 @@ export default function NewHero() {
                 alt="linkedIn logo"
                 className="h-4.5"
               ></img>
-            </p> */}
+            </p>
           </div>
 
           {/* Projects */}
-          <div className="row-start-4 col-start-6 col-end-10 ml-2 pr-2 bg-[#100f14] text-stone-200 rounded-md flex justify-end items-center">
+          <a
+            className="cursor-pointer row-start-4 col-start-6 col-end-10 ml-2 pr-2 bg-[#100f14] text-stone-200 rounded-md flex justify-end items-center hover:bg-[#282630]"
+            href="/NewProjectPage"
+          >
             Projects
-          </div>
+          </a>
 
           {/* About Box */}
           <div className="row-start-5 row-span-2 col-start-6 col-end-10 ml-2 flex items-center">
-            <div className="w-full h-[50%] bg-[#100f14] text-stone-200 rounded-md flex items-center pl-2">
+            <a
+              className="cursor-pointer w-full h-[50%] bg-[#100f14] text-stone-200 rounded-md flex items-center pl-2 hover:bg-[#282630]"
+              href="/aboutPage"
+            >
               About
-            </div>
+            </a>
           </div>
 
           {/* Tic Tac Toe */}
-          <div className="row-start-7 col-start-6 col-end-10 ml-2 pr-2 bg-[#100f14] text-stone-200 rounded-md flex justify-end items-center">
+          <div className="cursor-pointer row-start-7 col-start-6 col-end-10 ml-2 pr-2 bg-[#100f14] text-stone-200 rounded-md flex justify-end items-center hover:bg-[#282630]">
             Tick Tack Toe
           </div>
 
