@@ -60,7 +60,7 @@ export default function NewAboutMePage() {
                 Home
               </a>
               <a
-                href="/contactPage"
+                href="#"
                 className="w-21 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
               >
                 Contact
