@@ -1,12 +1,16 @@
 "use client";
 
 import React from "react";
+import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import { MapPin } from "lucide-react";
 import HoneyComb from "../components/atoms/HexBackground";
+import TTT from "../TicTacToe/page";
 import Link from "next/link";
 
 export default function NewHero() {
+  const [showGame, setShowGame] = useState(false);
+
   const kopier = async () => {
     try {
       await navigator.clipboard.writeText("Stiankarlsen709@gmail.com");
@@ -153,10 +157,30 @@ export default function NewHero() {
           >
             About
           </a>
-          {/* Tic Tac Toe */}
-          <div className="cursor-pointer row-start-6 col-start-6 col-end-10 ml-2 m-1 pr-2 flex justify-end items-center bg-sky-950 text-stone-300 rounded-md border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm">
-            Tick Tack Toe
-          </div>
+          {/* Tic Tac Toe - button if false "hold" value image, if true hold value tic tac toe */}
+          <button
+            className="cursor-pointer row-start-6 col-start-6 col-end-10 ml-2 m-1 pr-2 flex justify-end items-center bg-sky-950 text-stone-300 rounded-md border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
+            onClick={() => setShowGame(!showGame)}
+          >
+            {showGame ? "Back to img" : "Tic tac toe"}
+          </button>
+          {showGame ? (
+            <TTT />
+          ) : (
+            <div className="relative row-start-4 row-end-8 col-start-2 col-end-6 mb-2 flex justify-center items-center group">
+              <img
+                src="/ImgMe.jpg"
+                alt="Image of me"
+                className="w-full rounded-md transition-opacity duration-125 opacity-100 group-hover:opacity-100 absolute"
+              />
+              {/*Image Hover*/}
+              <img
+                src="/ImgMeHover.jpg"
+                alt="Image of me"
+                className="w-full rounded-md transition-opacity duration-125 opacity-0 group-hover:opacity-100 absolute"
+              />
+            </div>
+          )}
 
           {/* Spacer */}
           <div className="row-start-9 col-start-2 col-end-7" />

@@ -59,10 +59,10 @@ export default function NewAboutMePage() {
                 Home
               </a>
               <a
-                href="#"
-                className="w-21 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
+                href="/ProjectPage"
+                className="w-24 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
               >
-                Contact
+                Projects
               </a>
               <a
                 href="https://github.com/Stahelski"
@@ -173,26 +173,33 @@ export default function NewAboutMePage() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 pt-6">
-                <button className="group flex items-center space-x-2 bg-gradient-to-r from-sky-700 to-sky-500 text-stone-300 px-6 py-3 rounded-full font-semibold hover:from-sky-600 hover:to-sky-400 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
+                <a className="cursor-pointer group flex items-center space-x-2 bg-gradient-to-r from-sky-700 to-sky-500 text-stone-300 px-6 py-3 rounded-full font-semibold hover:from-sky-600 hover:to-sky-400 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
                   <Mail className="w-4 h-4 text-sky-300" />
                   <span>Get In Touch</span>
-                </button>
-                <button className="flex items-center space-x-2 border border-sky-300 px-6 py-3 rounded-full font-semibold text-stone-300 hover:bg-sky-950 hover:border-sky-400 transition-colors shadow-sm">
+                </a>
+                <a
+                  className="cursor-pointer flex items-center space-x-2 border border-sky-300 px-6 py-3 rounded-full font-semibold text-stone-300 hover:bg-sky-950 hover:border-sky-400 transition-colors shadow-sm"
+                  href="https://github.com/Stahelski"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Github className="w-4 h-4 text-[#b845f2]" />
                   <span>View Work</span>
-                </button>
+                </a>
               </div>
 
               {/* Social Links */}
               <div className="flex space-x-4 pt-4">
                 <a
-                  href="#"
+                  href="https://github.com/Stahelski"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
                 >
                   <Github className="w-4 h-4 text-stone-300 group-hover:text-[#b845f2]" />
                 </a>
                 <a
-                  href="/NewHero"
+                  href="#"
                   className="w-10 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
                 >
                   <Linkedin className="w-4 h-4 text-stone-300 group-hover:text-[#0a66c2]" />

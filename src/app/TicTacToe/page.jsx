@@ -4,7 +4,10 @@ import React, { useState } from "react";
 
 function Square({ value, onClick }) {
   return (
-    <button className="square h-20 w-20 border-2 m-1 text-xl" onClick={onClick}>
+    <button
+      className="square h-8 w-8 border-2 mx-auto my-auto m-1 text-xl"
+      onClick={onClick}
+    >
       {value}
     </button>
   );
@@ -24,8 +27,8 @@ export default function Game() {
   }
 
   return (
-    <div className="container max-w-screen min-h-screen flex justify-center items-center">
-      <div className="Board grid grid-cols-3 row-span-3 border-2">
+    <div className="w-[500%] flex justify-center items-center ">
+      <div className="relative top-[700%] left-[120%]  Board grid grid-cols-3 row-span-3 bg-sky-950 border-2 rounded-md">
         {squares.map((value, index) => (
           <Square
             key={index}
