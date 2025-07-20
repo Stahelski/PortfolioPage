@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Hero from "./components/organisms/Hero";
 import ProjectSection from "./components/organisms/projectSection";
