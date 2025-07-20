@@ -11,7 +11,7 @@ import {
   Calendar,
   Settings,
 } from "lucide-react";
-import ImageCarusel from "../components/functions/ImgSlider";
+import ImageCarusel from "../_archive_components/functions/ImgSlider";
 
 const MesoShowcase = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

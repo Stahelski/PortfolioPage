@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import css from "../../globals.css";
+import css from "../../_archive_global.css";
 
 export default function Navbar() {
   return (

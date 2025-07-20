@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import Footer from "@/app/components/organisms/Footer";
+import Footer from "@/app/_archive/_archive_components/organs/Footer";
 import ContactNavbar from "./ContactNavbar";
 import HeroBG from "../components/atoms/HeroBG";
 

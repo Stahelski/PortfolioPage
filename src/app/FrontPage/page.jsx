@@ -140,7 +140,7 @@ export default function NewHero() {
 
           <a
             className="cursor-pointer row-start-4 col-start-6 col-end-10 ml-2 m-1 pr-2 flex justify-end items-center bg-sky-950 text-stone-300 rounded-md border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
-            href="/NewProjectPage"
+            href="/ProjectPage"
           >
             Projects
           </a>
