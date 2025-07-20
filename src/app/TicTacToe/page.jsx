@@ -27,8 +27,8 @@ export default function Game() {
   }
 
   return (
-    <div className="w-[500%] flex justify-center items-center ">
-      <div className="relative top-[700%] left-[120%]  Board grid grid-cols-3 row-span-3 bg-sky-950 border-2 rounded-md">
+    <div className="w-full h-full flex justify-center items-center ">
+      <div className="Board w-full h-full grid grid-cols-3 row-span-3 bg-sky-950 border-2 rounded-md">
         {squares.map((value, index) => (
           <Square
             key={index}

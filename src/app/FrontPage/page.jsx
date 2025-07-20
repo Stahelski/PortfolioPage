@@ -165,7 +165,10 @@ export default function NewHero() {
             {showGame ? "Back to img" : "Tic tac toe"}
           </button>
           {showGame ? (
-            <TTT />
+            <div className="relative row-start-4 row-end-8 col-start-2 col-end-6 mb-2 flex justify-center items-center group">
+              {" "}
+              <TTT />{" "}
+            </div>
           ) : (
             <div className="relative row-start-4 row-end-8 col-start-2 col-end-6 mb-2 flex justify-center items-center group">
               <img
