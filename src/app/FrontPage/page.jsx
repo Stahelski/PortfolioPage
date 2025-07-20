@@ -4,6 +4,7 @@ import React from "react";
 import { Toaster, toast } from "react-hot-toast";
 import { MapPin } from "lucide-react";
 import HoneyComb from "../components/atoms/HexBackground";
+import Link from "next/link";
 
 export default function NewHero() {
   const kopier = async () => {
@@ -114,15 +115,15 @@ export default function NewHero() {
           <div className="relative row-start-2 col-start-2 col-end-10 mt-3 flex justify-end items-center bg-[#1f1d22]">
             <MapPin className="absolute left-0 mt-3 w-4 h-4 text-sky-400" />
             <a className="absolute left-6 mt-4 text-stone-300">Norway</a>
-            <p
-              className=" cursor-pointer h-6 w-6 mr-4 bg-sky-900 hover:bg-sky-700 rounded-full flex justify-center items-center transfor hover:scale-112 transition-transform duration-75"
+            <a
+              className="cursor-pointer h-6 w-6 mr-4 bg-sky-900 hover:bg-sky-700 rounded-full flex justify-center items-center transfor hover:scale-112 transition-transform duration-75"
               href="https://github.com/Stahelski"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src="/Github.svg" alt="github logo" className="h-4.5"></img>
-            </p>
-            <p
+            </a>
+            <a
               className="cursor-pointer h-6 w-6 bg-sky-900 hover:bg-sky-700 rounded-full flex justify-center items-center transfor hover:scale-112 transition-transform duration-75"
               href="#"
               target="_blank"
@@ -133,7 +134,7 @@ export default function NewHero() {
                 alt="linkedIn logo"
                 className="h-4.5"
               ></img>
-            </p>
+            </a>
           </div>
 
           {/* Projects */}
