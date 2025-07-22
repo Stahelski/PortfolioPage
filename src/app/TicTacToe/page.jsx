@@ -35,8 +35,6 @@ function calcWinner(squares) {
   return null;
 }
 
-function displayWinner(calcWinner) {}
-
 function aiPlayer() {}
 
 export default function Game() {
@@ -57,10 +55,15 @@ export default function Game() {
   const winner = calcWinner(squares);
   let status;
   if (winner) {
-    status = "Winner: " + winner;
+    status = "Winner is: " + winner;
   } else {
-    status = "Next move belongs to " + (xIsNext ? "X" : "O");
+    status = "Next move => " + (xIsNext ? "X" : "O");
   }
+
+  const handelReset = () => {
+    setSquares(Array(9).fill(null));
+    setXIsNext(true);
+  };
 
   return (
     <div className="w-full h-full flex justify-center items-center text-sky-300">
@@ -73,21 +76,20 @@ export default function Game() {
           />
         ))}
       </div>
-      <div className="status absolute top-36">{status}</div>
+      <div className="status absolute top-36">
+        {status}{" "}
+        <button
+          className="relative top-1 border rounded-md px-1"
+          onClick={handelReset}
+        >
+          Reset
+        </button>
+      </div>
     </div>
   );
 }
 
+// on klikk, reset spill
+// on klikk,
+
 // Husk å lag en "AI" motspiller!
-
-//https://react.dev/learn/tutorial-tic-tac-toe
-
-// - Se over, AI generert
-//   What's Next?
-//  Add a winner check (calculateWinner)
-
-//  Add a restart/reset button
-
-//  Add an AI opponent (e.g. random or minimax)
-
-//  Add a "key" stroke on the current player's move (like you mentioned earlier)
