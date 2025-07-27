@@ -27,7 +27,7 @@ function calcWinner(squares) {
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a];
+      return squares[a]; // Returnerer vinneren ("X" eller "O")
     }
   }
   return null;
@@ -40,27 +40,31 @@ function isBoardFull(squares) {
 // Minimax-algoritme
 function minimax(board, isMaximizing) {
   const winner = calcWinner(board);
-  if (winner === "O") return { score: 1 };
-  if (winner === "X") return { score: -1 };
-  if (isBoardFull(board)) return { score: 0 };
+  if (winner === "O") return { score: 1 }; // AI vinner
+  if (winner === "X") return { score: -1 }; // Spiller vinner
+  if (isBoardFull(board)) return { score: 0 }; // Uavgjort
 
-  const scores = [];
-  const moves = [];
+  const scores = []; // Lagrer poengene for hvert mulig trekk
+  const moves = []; // Lagrer posisjonen til hvert mulig trekk
 
   for (let i = 0; i < board.length; i++) {
     if (board[i] === null) {
-      const newBoard = board.slice();
-      newBoard[i] = isMaximizing ? "O" : "X";
+      const newBoard = board.slice(); // Kopier brettet
+      newBoard[i] = isMaximizing ? "O" : "X"; // Sett neste trekk
+
+      // Kjør rekursivt for neste trekk (bytt hvem sin tur det er)
       const result = minimax(newBoard, !isMaximizing);
-      scores.push(result.score);
-      moves.push(i);
+
+      scores.push(result.score); // Samle score
+      moves.push(i); // Samle tilhørende posisjon
     }
   }
-
+  // Velg beste trekk for AI (maksimer)
   if (isMaximizing) {
     const maxScore = Math.max(...scores);
     return { score: maxScore, move: moves[scores.indexOf(maxScore)] };
   } else {
+    // Velg dårligste trekk for spiller (minimer)
     const minScore = Math.min(...scores);
     return { score: minScore, move: moves[scores.indexOf(minScore)] };
   }
@@ -128,96 +132,6 @@ export default function Game() {
     </div>
   );
 }
-//!----
-// "use client";
-
-// import React, { useState } from "react";
-
-// function Square({ value, onClick }) {
-//   return (
-//     <button
-//       className="square h-8 w-8 border-2 mx-auto my-auto m-1 text-xl"
-//       onClick={onClick}
-//     >
-//       {value}
-//     </button>
-//   );
-// }
-
-// function calcWinner(squares) {
-//   const lines = [
-//     [0, 1, 2],
-//     [3, 4, 5],
-//     [6, 7, 8],
-//     [0, 3, 6],
-//     [1, 4, 7],
-//     [2, 5, 8],
-//     [0, 4, 8],
-//     [2, 4, 6],
-//   ];
-//   // for hver linje i "lines", ta og destrukturer array i "lines" => const [a, b, c] = lines[i];
-//   // og hvist a er det samme som b og c, så har vi en vinner => "Her sjekker vi om alle tre rutene i en vinnerlinje har samme verdi."
-//   for (let i = 0; i < lines.length; i++) {
-//     const [a, b, c] = lines[i];
-//     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-//       return squares[a];
-//     }
-//   }
-//   return null;
-// }
-
-// export default function Game() {
-//   const [squares, setSquares] = useState(Array(9).fill(null));
-//   const [xIsNext, setXIsNext] = useState(true);
-
-//   function handleClick(index) {
-//     if (squares[index] || calcWinner(squares)) {
-//       return;
-//     } // Do nothing if already filled, or return if there is a winner
-
-//     const nextSquares = squares.slice();
-//     nextSquares[index] = xIsNext ? "X" : "O";
-//     setSquares(nextSquares);
-//     setXIsNext(!xIsNext);
-//   }
-
-//   const winner = calcWinner(squares);
-//   let status;
-//   if (winner) {
-//     status = "Winner is: " + winner;
-//   } else {
-//     status = "Next move => " + (xIsNext ? "X" : "O");
-//   }
-
-//   const handelReset = () => {
-//     setSquares(Array(9).fill(null));
-//     setXIsNext(true);
-//   };
-
-//   return (
-//     <div className="w-full h-full flex justify-center items-center text-sky-300">
-//       <div className="Board w-full h-full grid grid-cols-3 row-span-3 bg-sky-950 border-2 rounded-md">
-//         {squares.map((value, index) => (
-//           <Square
-//             key={index}
-//             value={value}
-//             onClick={() => handleClick(index)}
-//           />
-//         ))}
-//       </div>
-//       <div className="status absolute top-36">
-//         {status}{" "}
-//         <button
-//           className="relative top-1 border rounded-md px-1"
-//           onClick={handelReset}
-//         >
-//           Reset
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-
 //! kopi av kode før implementering av AI
 // "use client";
 
