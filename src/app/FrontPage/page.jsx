@@ -52,7 +52,7 @@ export default function NewHero() {
       <div className="z-10 h-[65vh] w-[52vw] grid grid-cols-7 grid-rows-16 gap-3">
         {/* About Text */}
         <div className="col-span-3 row-span-4 bg-[#1f1d22] text-stone-300 rounded-md flex items-center pr-2 pl-4">
-          I'm Stian, a front-end developer with a focus on React and Next.js.
+          I'm Stian, a front-end developer with a focus on Next.js.
         </div>
 
         {/* Tech Stack */}
