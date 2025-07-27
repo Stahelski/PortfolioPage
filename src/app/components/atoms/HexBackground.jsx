@@ -1,22 +1,52 @@
-import React from "react";
-import honeyComb from "./honeyComb.css";
+//! ------------------------- AI =>
+import React, { useMemo } from "react";
+import "./honeyComb.css";
 
-export default function honeyCombBackground() {
-  const rows = [];
+export default function HoneyCombBackground() {
+  // WITH useMemo - Executes loops only once during component lifetime.. - WITHOUT useMemo - runs on every render Creates 2,079 new React elements every time!
+  const rows = useMemo(() => {
+    const result = [];
 
-  for (let i = 0; i < 21; i++) {
-    const boxes = [];
+    for (let i = 0; i < 21; i++) {
+      const boxes = [];
 
-    for (let j = 0; j < 99; j++) {
-      boxes.push(<div key={j} className="box"></div>);
+      for (let j = 0; j < 99; j++) {
+        boxes.push(<div key={j} className="box" />);
+      }
+
+      result.push(
+        <div key={i} className={`row ${i % 2 === 1 ? "offset" : ""}`}>
+          {boxes}
+        </div>
+      );
     }
 
-    rows.push(
-      <div key={i} className={`row ${i % 2 === 1 ? "offset" : ""}`}>
-        {boxes}
-      </div>
-    );
-  }
+    return result;
+  }, []);
 
   return <div className="container">{rows}</div>;
 }
+
+//!----------------------------- Originale =>
+// import React from "react";
+// import honeyComb from "./honeyComb.css";
+
+// export default function honeyCombBackground() {
+//   const rows = [];
+
+//   for (let i = 0; i < 21; i++) {
+//     const boxes = [];
+
+//     for (let j = 0; j < 99; j++) {
+//       boxes.push(<div key={j} className="box"></div>);
+//     }
+
+//     rows.push(
+//       <div key={i} className={`row ${i % 2 === 1 ? "offset" : ""}`}>
+//         {boxes}
+//       </div>
+//     );
+//   }
+
+//   return <div className="container">{rows}</div>;
+// }
