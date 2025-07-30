@@ -1,3 +1,33 @@
+// ✅ Anbefaling: Ett komponent, to layouter (med breakpoints)
+// Dette er mest fleksibelt og skalerbart:
+
+// jsx
+
+// <div className="flex flex-col lg:flex-row">
+//   {/* Mobil-stil gjelder alltid */}
+//   <div className="p-4 w-full">
+//     {/* Innhold for både mobil og desktop */}
+//   </div>
+
+//   {/* Desktop layout kicks in fra lg: og oppover */}
+//   <div className="hidden lg:block w-1/2">
+//     {/* Ekstra fancy ting som kun vises på større skjermer */}
+//   </div>
+// </div>
+// ✅ Eksempel: skifte mellom to versjoner av samme komponent
+// jsx
+
+// {/* Mobil-komponent */}
+// <div className="block lg:hidden">
+//   <MobileHero />
+// </div>
+
+// {/* Desktop-komponent */}
+// <div className="hidden lg:block">
+//   <DesktopHero />
+// </div>
+// Du kan bruke dette hvis komponentene er meget ulike, men sørg for at ikke begge rendres samtidig (de skjules med display: none).
+
 "use client";
 
 import React from "react";
@@ -6,7 +36,7 @@ import { Toaster, toast } from "react-hot-toast";
 import { MapPin } from "lucide-react";
 import HoneyComb from "../components/atoms/HexBackground";
 import TTT from "../TicTacToe/page";
-import Link from "next/link";
+
 
 export default function NewHero() {
   const [showGame, setShowGame] = useState(false);
@@ -65,24 +95,26 @@ export default function NewHero() {
               key={index}
               className="row-span-2 flex justify-center items-center transform hover:scale-112 transition-transform duration-75"
             >
-              <img src={tech.src} alt={`${tech.alt} logo`} className="h-11" />
+              <img
+                src={tech.src}
+                alt={`${tech.alt} logo`}
+                className="md:h-9 lg:h-11"
+              />
             </div>
           ))}
         </div>
 
-        {/* Email */}
-        <div className="relative col-span-3 row-start-14 row-end-16 justify-center bg-[#1f1d22] text-stone-300 rounded-md flex items-center pr-4">
-          Stiankarlsen709@gmail.com
-          <button
-            className="absolute right-0 cursor-pointer transform hover:scale-112 transition-transform duration-75 "
-            onClick={kopier}
-          >
-            <img
-              src="/copy_all_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
-              alt="copy image"
-              className="right-0 pr-1 h-4 "
-            ></img>
-          </button>
+        {/* LifeStyle Icons */}
+        <div className="relative col-span-3 row-start-14 row-end-16 justify-center bg-[#1f1d22] text-stone-300 rounded-md flex items-center md:text-xs lg:text-[1rem]">
+          {lifestyle.map((item, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center md:px-3 lg:space-x-0 xl:space-x-2 "
+            >
+              <span>{item.label}</span>
+              <img src={item.icon} alt="Heart" className="px-1 md:h-4 xl:h-5" />
+            </div>
+          ))}
         </div>
         <Toaster position="top-right" />
 
@@ -188,17 +220,19 @@ export default function NewHero() {
           {/* Spacer */}
           <div className="row-start-9 col-start-2 col-end-7" />
 
-          {/* Lifestyle Icons */}
-          <div className="row-start-10 col-start-2 col-end-7 text-stone-300 flex justify-between items-center pb-1">
-            {lifestyle.map((item, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center lg:space-x-0 xl:space-x-2 "
-              >
-                <span>{item.label}</span>
-                <img src={item.icon} alt="Heart" className="lg:h-4 xl:h-5" />
-              </div>
-            ))}
+          {/* Email */}
+          <div className="row-start-10 col-start-2 col-end-14 text-stone-300 flex items-center pb-1">
+            Stiankarlsen709@gmail.com
+            <button
+              className="px-1 cursor-pointer transform hover:scale-112 transition-transform duration-75 "
+              onClick={kopier}
+            >
+              <img
+                src="/copy_all_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+                alt="copy image"
+                className="right-0 pr-1 h-4 "
+              ></img>
+            </button>
           </div>
         </div>
       </div>
