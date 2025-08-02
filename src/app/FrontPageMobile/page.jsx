@@ -118,7 +118,7 @@ export default function FrontPageMobile() {
             <img
               src="/copy_all_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
               alt="copy image"
-              className="right-0 pl-1.5 h-5 "
+              className="right-0 pl-0 md:pl-1.5 h-5 "
             ></img>
           </button>
           {/*Short text about me*/}
@@ -130,7 +130,7 @@ export default function FrontPageMobile() {
             <a className="absolute left-0 text-stone-300 pl-4 pt-2">
               Tech stack
             </a>
-            <div className="wrapper grid grid-cols-4 gap-4 mx-4 mt-14">
+            <div className="wrapper grid grid-cols-4 gap-4 mx-auto mt-14">
               {techStack.map((tech, index) => (
                 <div key={index} className="h-16 w-16">
                   <img
