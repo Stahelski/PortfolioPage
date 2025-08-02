@@ -42,7 +42,7 @@ export default function FrontPageMobile() {
       {/*Mobil layout*/}
       <div className="block md:hidden flex-col z-10">
         {/*MainContent*/}
-        <div className="h-[90vh] w-[85vw] bg-[#1f1d22d2] rounded-lg grid grid-cols-12 grid-rows-14">
+        <div className="h-[90vh] w-[85vw] rounded-lg grid grid-cols-12 grid-rows-14">
           {/*Topp email and sosials icons*/}
           <div className="col-span-12 pl-4 row-start-1 pt-4 flex items-center justify-between gap-x-1">
             <div className="flex items-center justify-center">
@@ -77,7 +77,7 @@ export default function FrontPageMobile() {
             </div>
           </div>
           {/*Separating line*/}
-          <div className="h-0.5 col-start-1 col-span-12 row-start-2 bg-stone-300"></div>
+          <div className="h-0.5 mt-0.5 col-start-1 col-span-12 row-start-2 bg-stone-300"></div>
           {/*Image Me*/}
           <div className="pl-4 col-start-1 col-span-7 row-start-3">
             <img
@@ -106,7 +106,7 @@ export default function FrontPageMobile() {
               href="/TicTacToe"
               className="pl-3 mx-4 h-12 flex justify-start items-center bg-sky-950 text-stone-300 text-lg rounded-md border border-sky-300 active:bg-sky-900 active:border-sky-400 transition-colors group shadow-sm"
             >
-              Tic Tac Toe
+              TicTacToe
             </a>
           </div>
           {/*Email copy btn*/}
