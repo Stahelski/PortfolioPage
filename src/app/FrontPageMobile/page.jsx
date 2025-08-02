@@ -130,14 +130,17 @@ export default function FrontPageMobile() {
             <a className="absolute left-0 text-stone-300 pl-2 pt-2">
               Tech stack
             </a>
-            {techStack.map((tech, index) => (
-              <div
-                key={index}
-                className="row-span-2 flex justify-center items-center"
-              >
-                <img src={tech.src} alt={`${tech.alt} logo`} className="h-5" />
-              </div>
-            ))}
+            <div className="wrapper grid grid-cols-4 gap-4 mx-auto mt-14">
+              {techStack.map((tech, index) => (
+                <div key={index} className="h-16 w-16">
+                  <img
+                    src={tech.src}
+                    alt={`${tech.alt} logo`}
+                    className="h-15"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
