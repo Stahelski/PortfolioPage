@@ -18,6 +18,20 @@ export default function FrontPageMobile() {
     }
   };
 
+  const techStack = [
+    { src: "/react-original.svg", alt: "React" },
+    { src: "/nextjs-original.svg", alt: "Next.js" },
+    { src: "/javascript-original (1).svg", alt: "JavaScript" },
+    { src: "/nodejs-original-wordmark.svg", alt: "Node.js" },
+    { src: "/html5-original.svg", alt: "HTML" },
+    { src: "/css3-original.svg", alt: "CSS" },
+    { src: "/git-original.svg", alt: "Git" },
+    { src: "/Github.svg", alt: "GitHub" },
+    { src: "/tailwindcss-original.svg", alt: "Tailwind CSS" },
+    { src: "/figma-original.svg", alt: "Figma" },
+    { src: "/sqlite-original.svg", alt: "SQLite" },
+  ];
+
   return (
     <div className="FrontPageContainer relative flex justify-center items-center min-h-screen max-w-screen-9xl mx-auto overflow-hidden">
       {/*Background*/}
@@ -108,13 +122,24 @@ export default function FrontPageMobile() {
             ></img>
           </button>
           {/*Short text about me*/}
-          <div className="col-start-1 col-span-12 row-start-8 h-16 mx-4 mt-2 bg-[#332f3a] px-3 border border-sky-300 shadow-sm text-stone-300 rounded-md flex items-center">
+          <div className="col-start-1 col-span-12 row-start-8 h-16 mx-4 mt-2 bg-[#332f3a] px-3 border border-sky-700 shadow-sm text-stone-300 rounded-md flex items-center">
             I'm Stian, a front-end developer with a focus on Next.js.
           </div>
-            {/*TechStack*/}
-        <div className="col-start-1 col-span-12 row-start-9 row-span-6 mt-8 mb-4 mx-4 rounded-md bg-[#332f3a] px-3 border border-sky-300 shadow-sm text-stone-300"></div>
+          {/*TechStack*/}
+          <div className="relative col-start-1 col-span-12 row-start-9 row-span-6 mt-8 mb-4 mx-4 rounded-md bg-[#332f3a] px-3 border border-sky-700 shadow-sm text-stone-300">
+            <a className="absolute left-0 text-stone-300 pl-2 pt-2">
+              Tech stack
+            </a>
+            {techStack.map((tech, index) => (
+              <div
+                key={index}
+                className="row-span-2 flex justify-center items-center"
+              >
+                <img src={tech.src} alt={`${tech.alt} logo`} className="h-5" />
+              </div>
+            ))}
+          </div>
         </div>
-      
       </div>
 
       {/*PC layout*/}
