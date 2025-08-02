@@ -127,10 +127,10 @@ export default function FrontPageMobile() {
           </div>
           {/*TechStack*/}
           <div className="relative col-start-1 col-span-12 row-start-9 row-span-8 mt-8 mb-4 mx-4 rounded-md bg-[#06000f] px-3 border border-sky-700 shadow-sm text-stone-300">
-            <a className="absolute left-0 text-stone-300 pl-2 pt-2">
+            <a className="absolute left-0 text-stone-300 pl-4 pt-2">
               Tech stack
             </a>
-            <div className="wrapper grid grid-cols-4 gap-4 mx-auto mt-14">
+            <div className="wrapper grid grid-cols-4 gap-4 mx-4 mt-14">
               {techStack.map((tech, index) => (
                 <div key={index} className="h-16 w-16">
                   <img
