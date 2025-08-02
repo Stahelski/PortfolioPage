@@ -110,7 +110,7 @@ export default function Game() {
   };
 
   return (
-    <div className="w-screen h-[50vh] md:w-full md:h-full mt-30 md:mt-0 flex justify-center items-center text-sky-300">
+    <div className="w-screen h-[50vh] md:w-full md:h-full mt-20 md:mt-0 flex justify-center items-center text-sky-300">
       <div className="Board w-full h-full grid grid-cols-3 row-span-3 bg-sky-950 border-2 rounded-md">
         {squares.map((value, index) => (
           <Square
@@ -120,7 +120,7 @@ export default function Game() {
           />
         ))}
       </div>
-      <div className="status absolute top-150 md:top-36">
+      <div className="status absolute top-140 md:top-36">
         {status}{" "}
         <button
           className="relative top-1 border rounded-md ml-4 md:ml-0 px-3 py-1 md:py-0.5 md:px-2"
