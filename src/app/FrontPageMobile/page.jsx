@@ -42,7 +42,7 @@ export default function FrontPageMobile() {
       {/*Mobil layout*/}
       <div className="block md:hidden flex-col z-10">
         {/*MainContent*/}
-        <div className="h-[90vh] w-[85vw] rounded-lg grid grid-cols-12 grid-rows-16">
+        <div className="h-[90vh] w-[95vw] rounded-lg grid grid-cols-12 grid-rows-16">
           {/*Topp email and sosials icons*/}
           <div className="col-span-12 pl-4 row-start-1 pt-4 flex items-center justify-between gap-x-1">
             <div className="flex items-center justify-center">
