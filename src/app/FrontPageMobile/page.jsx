@@ -8,6 +8,16 @@ import HoneyComb from "../components/atoms/HexBackground";
 import TTT from "../TicTacToe/page";
 
 export default function FrontPageMobile() {
+  const kopier = async () => {
+    try {
+      await navigator.clipboard.writeText("Stiankarlsen709@gmail.com");
+      toast.success("Email copied");
+    } catch (err) {
+      console.log(err.message);
+      toast.error("Failed to copy Email");
+    }
+  };
+
   return (
     <div className="FrontPageContainer relative flex justify-center items-center min-h-screen max-w-screen-9xl mx-auto overflow-hidden">
       {/*Background*/}
@@ -18,22 +28,93 @@ export default function FrontPageMobile() {
       {/*Mobil layout*/}
       <div className="block md:hidden flex-col z-10">
         {/*MainContent*/}
-        <div className="h-[70vh] w-[85vw] bg-purple-950 grid grid-cols-16 grid-rows-32">
+        <div className="h-[90vh] w-[85vw] bg-[#1f1d22d2] rounded-lg grid grid-cols-12 grid-rows-14">
           {/*Topp email and sosials icons*/}
-          <div className="col-span-16 row-start-2 row-span-2 my-auto bg-gray-200">
-            <div className="z-15 pl-4 h-6 w-56 my-auto bg-amber-500">
-              Stiankarlsen709@gmail.com
+          <div className="col-span-12 pl-4 row-start-1 pt-4 flex items-center justify-between gap-x-1">
+            <div className="flex items-center justify-center">
+              <MapPin className="w-6 h-6 col-start-2 text-sky-400" />
+              <a className="mt-2 pl-2 text-stone-300">Norway</a>
+            </div>
+            <div className="pr-4 flex items-center justify-center">
+              <a
+                className="cursor-pointer h-6 w-6 mr-4 bg-sky-900 hover:bg-sky-700 rounded-full flex justify-center items-center "
+                href="https://github.com/Stahelski"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/Github.svg"
+                  alt="github logo"
+                  className="h-4.5"
+                ></img>
+              </a>
+              <a
+                className="cursor-pointer h-6 w-6 bg-sky-900 hover:bg-sky-700 rounded-full flex justify-center items-center "
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/linkedin-brands-solid.svg"
+                  alt="linkedIn logo"
+                  className="h-4.5"
+                ></img>
+              </a>
             </div>
           </div>
           {/*Separating line*/}
-          <div className="h-1 w-full col-span-14 col-start-2 row-start-4 bg-stone-300"></div>
+          <div className="h-0.5 col-start-1 col-span-12 row-start-2 bg-stone-300"></div>
           {/*Image Me*/}
-          <div className="">
-            <img src="" alt="Image of me" className=""></img>
+          <div className="pl-4 col-start-1 col-span-7 row-start-3">
+            <img
+              src="/ImgMe.jpg"
+              alt="Image of me"
+              className="rounded-sm"
+            ></img>
           </div>
+          {/*Project/About/Tic Tac Toe*/}
+          <div className="col-start-8 col-span-5 row-span-4 flex flex-col space-y-4">
+            <a
+              href="/ProjectPage"
+              className="pl-3 mx-4 h-12 flex justify-start items-center bg-sky-950 text-stone-300 text-lg rounded-md border border-sky-300 active:bg-sky-900 active:border-sky-400 transition-colors group shadow-sm"
+            >
+              Projects
+            </a>
+
+            <a
+              href="/aboutPage"
+              className="pl-3 mx-4 h-12 flex justify-start items-center bg-sky-950 text-stone-300 text-lg rounded-md border border-sky-300 active:bg-sky-900 active:border-sky-400 transition-colors group shadow-sm"
+            >
+              About
+            </a>
+
+            <a
+              href="/TicTacToe"
+              className="pl-3 mx-4 h-12 flex justify-start items-center bg-sky-950 text-stone-300 text-lg rounded-md border border-sky-300 active:bg-sky-900 active:border-sky-400 transition-colors group shadow-sm"
+            >
+              Tic Tac Toe
+            </a>
+          </div>
+          {/*Email copy btn*/}
+          <button
+            onClick={kopier}
+            className="col-start-1 col-span-12 row-start-7 pl-3 mx-4  h-12 flex justify-center items-center bg-sky-950 text-stone-300 text-lg rounded-md border border-sky-300 active:bg-sky-900 active:border-sky-400 transition-colors group shadow-sm"
+          >
+            Stiankarlsen709@gmail.com
+            <img
+              src="/copy_all_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+              alt="copy image"
+              className="right-0 pl-1.5 h-5 "
+            ></img>
+          </button>
+          {/*Short text about me*/}
+          <div className="col-start-1 col-span-12 row-start-8 h-16 mx-4 mt-2 bg-[#332f3a] px-3 border border-sky-300 shadow-sm text-stone-300 rounded-md flex items-center">
+            I'm Stian, a front-end developer with a focus on Next.js.
+          </div>
+            {/*TechStack*/}
+        <div className="col-start-1 col-span-12 row-start-9 row-span-6 mt-8 mb-4 mx-4 rounded-md bg-[#332f3a] px-3 border border-sky-300 shadow-sm text-stone-300"></div>
         </div>
-        {/*TechStack*/}
-        <div className="h-20 w-10 mx-1 bg-purple-700"></div>
+      
       </div>
 
       {/*PC layout*/}

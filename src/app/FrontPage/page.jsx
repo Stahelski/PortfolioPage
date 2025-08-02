@@ -37,7 +37,6 @@ import { MapPin } from "lucide-react";
 import HoneyComb from "../components/atoms/HexBackground";
 import TTT from "../TicTacToe/page";
 
-
 export default function NewHero() {
   const [showGame, setShowGame] = useState(false);
 
@@ -47,7 +46,7 @@ export default function NewHero() {
       toast.success("Email copied");
     } catch (err) {
       console.log(err.message);
-      toast.error("Failed to copy email");
+      toast.error("Failed to copy Email");
     }
   };
 
