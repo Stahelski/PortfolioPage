@@ -42,7 +42,7 @@ export default function FrontPageMobile() {
       {/*Mobil layout*/}
       <div className="block md:hidden flex-col z-10">
         {/*MainContent*/}
-        <div className="h-[90vh] w-[85vw] rounded-lg grid grid-cols-12 grid-rows-14">
+        <div className="h-[90vh] w-[85vw] rounded-lg grid grid-cols-12 grid-rows-16">
           {/*Topp email and sosials icons*/}
           <div className="col-span-12 pl-4 row-start-1 pt-4 flex items-center justify-between gap-x-1">
             <div className="flex items-center justify-center">
@@ -126,7 +126,7 @@ export default function FrontPageMobile() {
             I'm Stian, a front-end developer with a focus on Next.js.
           </div>
           {/*TechStack*/}
-          <div className="relative col-start-1 col-span-12 row-start-9 row-span-6 mt-8 mb-4 mx-4 rounded-md bg-[#06000f] px-3 border border-sky-700 shadow-sm text-stone-300">
+          <div className="relative col-start-1 col-span-12 row-start-9 row-span-8 mt-8 mb-4 mx-4 rounded-md bg-[#06000f] px-3 border border-sky-700 shadow-sm text-stone-300">
             <a className="absolute left-0 text-stone-300 pl-2 pt-2">
               Tech stack
             </a>
