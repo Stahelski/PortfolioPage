@@ -199,7 +199,7 @@ export default function NewAboutMePage() {
                   <Github className="w-4 h-4 text-stone-300 group-hover:text-[#b845f2]" />
                 </a>
                 <a
-                  href="#"
+                  href="/OnePagersMyArt/Romulus"
                   className="w-10 h-10 bg-sky-950 rounded-full flex items-center justify-center border border-sky-300 hover:bg-sky-900 hover:border-sky-400 transition-colors group shadow-sm"
                 >
                   <Linkedin className="w-4 h-4 text-stone-300 group-hover:text-[#0a66c2]" />
