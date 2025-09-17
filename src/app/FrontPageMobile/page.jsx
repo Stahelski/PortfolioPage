@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import React from "react";
@@ -7,7 +5,6 @@ import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import { MapPin } from "lucide-react";
 import HoneyComb from "../components/atoms/HexBackground";
-import TTT from "../TicTacToe/page";
 
 export default function FrontPageMobile() {
   const kopier = async () => {
