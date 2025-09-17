@@ -152,7 +152,7 @@ export default function Home() {
               <div className="progress-section">
                 <div className="progress-label">
                   <span>Foundation Progress</span>
-                  <span>35%</span>
+                  <span>10%</span>
                 </div>
                 <div className="progress-track">
                   <div className="progress-fill" id="progressBar" />
