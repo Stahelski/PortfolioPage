@@ -1,32 +1,3 @@
-// ✅ Anbefaling: Ett komponent, to layouter (med breakpoints)
-// Dette er mest fleksibelt og skalerbart:
-
-// jsx
-
-// <div className="flex flex-col lg:flex-row">
-//   {/* Mobil-stil gjelder alltid */}
-//   <div className="p-4 w-full">
-//     {/* Innhold for både mobil og desktop */}
-//   </div>
-
-//   {/* Desktop layout kicks in fra lg: og oppover */}
-//   <div className="hidden lg:block w-1/2">
-//     {/* Ekstra fancy ting som kun vises på større skjermer */}
-//   </div>
-// </div>
-// ✅ Eksempel: skifte mellom to versjoner av samme komponent
-// jsx
-
-// {/* Mobil-komponent */}
-// <div className="block lg:hidden">
-//   <MobileHero />
-// </div>
-
-// {/* Desktop-komponent */}
-// <div className="hidden lg:block">
-//   <DesktopHero />
-// </div>
-// Du kan bruke dette hvis komponentene er meget ulike, men sørg for at ikke begge rendres samtidig (de skjules med display: none).
 
 "use client";
 
@@ -35,7 +6,7 @@ import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import { MapPin } from "lucide-react";
 import HoneyComb from "../components/atoms/HexBackground";
-import TTT from "../TicTacToe/page";
+
 
 export default function NewHero() {
   const [showGame, setShowGame] = useState(false);
@@ -198,7 +169,7 @@ export default function NewHero() {
           {showGame ? (
             <div className="relative row-start-4 row-end-8 col-start-2 col-end-6 mb-2 flex justify-center items-center group">
               {" "}
-              <TTT />{" "}
+              {" "}
             </div>
           ) : (
             <div className="relative row-start-4 row-end-8 col-start-2 col-end-6 mb-2 flex justify-center items-center group">
