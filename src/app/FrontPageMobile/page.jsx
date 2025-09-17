@@ -108,7 +108,7 @@ export default function FrontPageMobile() {
               href="/TicTacToe"
               className="pl-3 mx-4 h-12 flex justify-start items-center bg-sky-950 text-stone-300 text-lg rounded-md border border-sky-300 active:bg-sky-900 active:border-sky-400 transition-colors group shadow-sm"
             >
-              TicTacToe
+              TicTacTe
             </a>
           </div>
           {/*Email copy btn*/}
