@@ -197,7 +197,7 @@ export default function Home() {
                 <img
                   src="/Profil-Portjefølje.png"
                   alt="Profile icon"
-                  className="h-9 text-sm text-amber-50"
+                  className="h-9 lg:h-11 text-sm text-amber-50"
                 ></img>
               </div>
               <h3>Profiler og porteføljer</h3>
@@ -212,7 +212,7 @@ export default function Home() {
                 <img
                   src="/Deling.png"
                   alt="Share icon"
-                  className="h-9 text-sm text-amber-50"
+                  className="h-9 lg:h-11 text-sm text-amber-50"
                 ></img>
               </div>
               <h3>Prosjekter og deling</h3>
@@ -227,7 +227,7 @@ export default function Home() {
                 <img
                   src="/Like.png"
                   alt="Likes icon"
-                  className="h-9 text-sm text-amber-50"
+                  className="h-9 lg:h-11 text-sm text-amber-50"
                 ></img>
               </div>
               <h3>Likes og kommentarer</h3>
@@ -238,7 +238,7 @@ export default function Home() {
                 <img
                   src="/Forum.png"
                   alt="Forum icon"
-                  className="h-9 text-sm text-amber-50"
+                  className="h-9 lg:h-11 text-sm text-amber-50"
                 ></img>
               </div>
               <h3>Forum og samtaler</h3>
@@ -249,9 +249,9 @@ export default function Home() {
             <div className="feature-card animate-on-scroll">
               <div className="feature-icon">
                 <img
-                  src="/TeamWork.png"
+                  src="/Group.png"
                   alt="Team work icon"
-                  className="h-9 text-sm text-amber-50"
+                  className="h-9 lg:h-11 text-sm text-amber-50"
                 ></img>
               </div>
               <h3>Team og samarbeid (etter MVP)</h3>
@@ -264,7 +264,7 @@ export default function Home() {
                 <img
                   src="/Rute.png"
                   alt="Road icone"
-                  className="h-9 text-sm text-amber-50"
+                  className="h-9 lg:h-11 text-sm text-amber-50"
                 ></img>
               </div>
               <h3>Veikart og videreutvikling</h3>
