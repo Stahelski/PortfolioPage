@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
@@ -147,7 +148,7 @@ export default function Home() {
                 prosjekter med deling, likes og kommentarer, samt et enkelt
                 forum for samtaler. Dette skaper et solid fundament –
                 profesjonelt, men laget for kreative mennesker som vil forme en
-                digital framtid.
+                digital framtid sammen.
               </p>
               <div className="progress-section">
                 <div className="progress-label">
@@ -191,7 +192,14 @@ export default function Home() {
           </div>
           <div className="features-grid">
             <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">🏛️</div>
+              <div className="feature-icon">
+                {" "}
+                <img
+                  src="/Profil-Portjefølje.png"
+                  alt="Profile icon"
+                  className="h-9 text-sm text-amber-50"
+                ></img>
+              </div>
               <h3>Profiler og porteføljer</h3>
               <p>
                 Offentlige profilsider og porteføljer du kan dele med
@@ -199,7 +207,14 @@ export default function Home() {
               </p>
             </div>
             <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">📊</div>
+              <div className="feature-icon">
+                {" "}
+                <img
+                  src="/Deling.png"
+                  alt="Share icon"
+                  className="h-9 text-sm text-amber-50"
+                ></img>
+              </div>
               <h3>Prosjekter og deling</h3>
               <p>
                 Lagre, tagge og del prosjekter. Presenter arbeidet ditt
@@ -207,26 +222,51 @@ export default function Home() {
               </p>
             </div>
             <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">🌌</div>
+              <div className="feature-icon">
+                {" "}
+                <img
+                  src="/Like.png"
+                  alt="Likes icon"
+                  className="h-9 text-sm text-amber-50"
+                ></img>
+              </div>
               <h3>Likes og kommentarer</h3>
               <p>Gi og få tilbakemeldinger. Bygg bedre prosjekter sammen.</p>
             </div>
             <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">⚡</div>
+              <div className="feature-icon">
+                <img
+                  src="/Forum.png"
+                  alt="Forum icon"
+                  className="h-9 text-sm text-amber-50"
+                ></img>
+              </div>
               <h3>Forum og samtaler</h3>
               <p>
                 Delta i faglige diskusjoner og del kunnskap på tvers av nivåer.
               </p>
             </div>
             <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">🔮</div>
+              <div className="feature-icon">
+                <img
+                  src="/TeamWork.png"
+                  alt="Team work icon"
+                  className="h-9 text-sm text-amber-50"
+                ></img>
+              </div>
               <h3>Team og samarbeid (etter MVP)</h3>
               <p>
                 Mer struktur for samarbeid, roller og arbeidsflyt i neste faser.
               </p>
             </div>
             <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">🚀</div>
+              <div className="feature-icon">
+                <img
+                  src="/Rute.png"
+                  alt="Road icone"
+                  className="h-9 text-sm text-amber-50"
+                ></img>
+              </div>
               <h3>Veikart og videreutvikling</h3>
               <p>
                 Mentorprogram, intelligent matching og flere fellesskapsverktøy
